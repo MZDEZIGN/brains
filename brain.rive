@@ -1,153 +1,148 @@
 ! version = 2.0
 
 > begin
-	+ request // This trigger is tested first.
-	- {ok}    // An {ok} in the response means it's okay to get a real reply
++ request // This trigger is tested first.
+- {ok}    // An {ok} in the response means it's okay to get a real reply
 < begin
 
+
+
+
 // NAAM VAN DE BOTMASTER
-! var master   = MZDEZiGN
+! var master   = <strong>de DEZiGNER</strong>
+
+
 
 
 // BOT VARIABELEN (ALGEMEEN)
 ! var naam            = Suus
-! var achternaam      = de Sletbot
-! var leeftijd        = 19
+! var leeftijd        = 24
 ! var geboortedatum   = 12 november
 ! var geslacht        = meisje
 
+
+
+
 // BOT VARIABELEN (SEXUEEL | LICHAAM)
 ! var schaamhaar      = kaal
-! var schaamlippen    = mooie kleine
 
-! var location = Michigan
-! var city     = Detroit
-! var eyes     = blue
-! var hair     = light brown
-! var hairlen  = short
-! var color    = blue
-! var band     = Nickelback
-! var book     = Myst
-! var author   = Stephen King
-! var job      = robot
-! var website  = www.rivescript.com
+
 
 
 // SUBSTITUTIES
-! sub jij            = je
-! sub jou            = je
-! sub jouw           = je
+! sub lekkere         = mooie
+! sub heerlijke       = mooie
+! sub geile           = mooie
 
-! sub lekkere        = mooie
-! sub heerlijke      = mooie
-! sub geile          = mooie
-
-! sub kutje          = kut
-! sub poesje         = kut
-! sub poes           = kut
-! sub spleetje       = kut
-! sub spleet         = kut
-! sub gleufje        = kut
-! sub gleuf          = kut
-! sub doosje         = kut
-! sub doos           = kut
-! sub mutsje         = kut
-! sub muts           = kut
-! sub mosseltje      = kut
-! sub mossel         = kut
+! sub kutje           = kut
+! sub poesje          = kut
+! sub poes            = kut
+! sub spleetje        = kut
+! sub spleet          = kut
+! sub gleufje         = kut
+! sub gleuf           = kut
+! sub doosje          = kut
+! sub doos            = kut
+! sub mutsje          = kut
+! sub muts            = kut
+! sub mosseltje       = kut
+! sub mossel          = kut
 
 
-// Person substitutions
-! person i am    = you are
-! person you are = I am
-! person i'm     = you're
-! person you're  = I'm
-! person my      = your
-! person your    = my
-! person you     = I
-! person i       = you
+
+
+// PERSOONLIJKE SUBSTITUTIES
+! person ik ben       = jij bent
+! person jij bent     = ik ben
+! person mijn         = jouw
+! person jouw         = mijn
+! person jij          = ik
+! person ik           = jij
+
+
 
 
 // SET WAARDEN
-! array man      = heer man jongen
-! array vrouw    = dame vrouw meisje
-! array mannen   = heren mannen jongens
-! array vrouwen  = dames vrouwen meisjes
+! array man           = heer man jongen
+! array vrouw         = dame vrouw meisje
+! array mannen        = heren mannen jongens
+! array vrouwen       = dames vrouwen meisjes
 
-! array lol        = haha hahaha hahahaha lol
-! array colors     = wit zwart oranje rood blauw groen geel grijs bruin roze goud zilver
-! array height     = tall long wide thick
-! array measure    = inch in centimeter cm millimeter mm meter m inches centimeters millimeters meters
+
+
 
 ! array yes        = ja
 ! array no         = nee
 
 
+
+
 // LEER VAN DE GEBRUIKER.
 
 + mijn naam is *
-- <set naam=<formal>>Leuk je te ontmoeten, <get naam>.
-- <set naam=<formal>>Hoi <get naam>, leuk je te ontmoeten.
+- <set naam=<formal>>Leuk je te ontmoeten, <get naam>
+- <set naam=<formal>>Hoi <get naam>, leuk je te ontmoeten
 
 + ik heet *
-- <set naam=<formal>>Leuk je te ontmoeten, <get naam>.
-- <set naam=<formal>>Hoi <get naam>, leuk je te ontmoeten.
-
-+ (aart|aron|abe|abel|abraham|abram|adolf|adriaan|adrianus|age|alain|albert|alex|alexander|alfons|ali|allard|alper|andre|andreas|andries|andy|angelo|anthonie|anthony|antoine|anton|antonie|antonius|antoon|anwar|arend|arie|arjan|arjen|arne|arno|arnold|arnoud|arnout|aron|arthur|august|auke|axel|barend|barry|bart|barteld|bas|bastiaan|bauke|beau|ben|benjamin|berend|bernhard|berry|bert|bessel|bjorn|bob|boris|boudewijn|bouke|boy|bram|brandon|brent|brian|bruno|bryan|camiel|carel|carl|carlo|carlos|carol|carolus|cas|caspar|casper|cedric|cees|charles|chiel|chris|christiaan|christoffel|coen|connor|conor|constantijn|cor|coren|corne|cornelis|cornelius|daan|damian|daniel|danny|dave|david|davy|dennis|derk|dick|diederik|dimitri|dinand|dirk|dion|dominic|dominique|donald|douwe|durk|dylan|ed|eddie|eddy|edgar|eduard|edward|edwin|egbert|egon|elbert|eelco|elco|eldert|eli|elias|elja|elwin|emanuel|emerson|emiel|emmanuel|eric|erik|ernst|erwin|esli|esra|ethan|etienne|eugene|evan|everhardus|evert|ewoud|ewout|ezra|fabian|fedde|feike|felix|ferre|ferdinand|fernando|ferry|filip|finn|floriaan|florian|florianus|floris|fokke|folkert|fons|francesco|francis|franciscus|frank|franklin|frans|fred|freddie|frederick|frederik|freek|friedrich|friso|frits|gabriel|gaetan|gareth|gary|geert|geoffrey|george|gerard|gerardus|gerbrand|gerben|gerhard|gerhardus|gerk|gerrie|gerrit|gert|gertjan|gerwin|gert jan|ghislain|gideon|giel|gijs|gijsbert|gilles|gino|giovanni|glenn|godfried|gommaar|gorik|govert|graad|gradus|grant|gregory|guglielmo|guido|guilherme|guillaume|guillermo|gunther|gus|gust|gustaaf|guus|guy|haakon|haije|hakan|halvard|hamer|han|hannes|hans|hansko|har|harald|harco|harm|harmen|harold|harrie|harro|harry|has|hasse|heerke|heike|heiko|hein|helmut|hendrik|henk|henk jan|hennie|henri|henry|herbert|herman|hermen|herve|hessel|herwig|hicham|hidde|hieronymus|hilco|hildo|hinne|hotze|hubert|hugo|huub|husnu|hyltsje|ian|ibrahim|ids|idse|idsert|ignas|igor|ief|ijsbrand|ilan|ilja|imco|imme|inger|inti|isa|isaac|isaak|ischa|isidoor|ivan|ivar|ive|ivo|iwan|jaap|jacco|jaco|jairey|jack|jacob|jacques|jaimy|jake|jamai|james|jan|janko|janos|jan jaap|jannes|jan willem|jarich|jari|jarig|jarl|jarno|jaro|jarvey|jason|jasper|javier|jay|jayden|jean|jean jacques|jean paul|jef|jeff|jeffrey|jelger|jelis|jelle|jelmar|jelmer|jelte|jens|jent|jentsje|jeremy|jeroen|jerold|jerome|jesse|jezus|jielis|jihan|jim|jip|jo|joachim|joan|job|jochem|jochen|joel|joe|joep|joeri|joes|joey|joffrey|johan|johannes|john|johnny|jon|jonas|jonatan|jonathan|jonny|joop|joost|jop|joppe|joram|joran|joras|jordi|jordy|joren|jorg|jorin|joris|jorn|jorrit|jort|jory|jos|joshua|jouke|jozef|jozias|jozua|judas|julian|julius|jules|julien|junior|jurgen|jurjen|jurn|jurre|jurriaan|jurrie|jurrien|just|justin|justus|juul|juust|jyrki|kaeso|kai|kamiel|kalle|kane|karel|karim|karinus|karl|kasper|keanu|kees|keith|kelvin|ken|kenji|kenneth|kenny|kenzo|kevin|khalid|kiano|kick|kieran|kik|kilian|kjeld|klaas|klemen|knut|ko|kobus|koen|koenraad|koert|kofi|koos|korneel|krelis|krijn|kris|kristan|kristian|kristof|kuno|kurt|kwinten|kyrell|lambert|lammert|lamptey|lancelot|lander|lard|lars|laurens|laurent|laurents|laurenz|leander|leen|leendert|leense|lennaert|lennard|lennart|lennert|leo|leon|leonard|leopold|leroy|lesley|lester|levenez|levi|lex|liam|lieven|lieuwe|lode|lodewijk|logan|lolle|lorens|lorenz|lou|louie|louis|louw|luc|luca|lucas|ludo|luk|luke|luuc|luuk|lux|maarten|machiel|maikel|manuel|marc|marc marie|marco|marcel|marcellus|marcus|marek|marijn|marinus|mario|marius|mark|marnick|marniks|marnix|mart|marten|martijn|martin|martinus|mathias|mathieu|mathijs|mats|matthew|matthias|matthijs|mattijn|matty|maurice|maurits|mauro|max|maxim|maxime|maximiliaan|mees|meindert|melle|mels|melroy|menno|merijn|merlijn|micael|micil|micha|michael|michel|michiel|mick|mickey|mien|miguel|mijndert|mike|milan|milano|miles|mink|miquel|miroslav|mirano|misha|misja|mitch|mitchel|mitchell|mitis|mohammed|moreno|morgens|morris|mounir|moussa|mustafa|mylan|myron|nabil|nadi|naftali|nasir|nasser|nathan|nathaniel|naud|naut|nauth|neal|nelis|nelson|nick|nico|nicolaas|nicolas|niek|niel|niele|niels|nigel|nikita|nikki|niko|nikolaas|nikolai|nilesh|nils|nino|noah|norbert|norwin|noud|nout|nouth|octaaf|odin|oguz|oguzhan|okan|okke|olaf|olav|ole|oleg|olger|oliver|olivier|olkanson|olov|onno|oscar|oskar|oswin|othman|ot|otto|ovidius|owen|ozkar|pablo|pascal|patrick|paul|paulus|pedro|peer|pelle|pepijn|per|peter|petrus|philip|philippe|pier|pierre|piet|pieter|pim|pjotr|pleun|puck|quentin|quido|quinn|quincy|quinten|quintin|quintus|quirein|quirijn|raf|rafael|raief|rakesh|rakke|ralf|ralph|ramesa|ramesh|ramon|ramses|randal|raymon|raymond|reginald|reimert|rein|reindert|reiner|reinhard|reinier|reinout|remco|remko|remi|remy|renaldo|renato|renatus|rene|renger|rens|reuven|ricardo|ricco|richard|rick|ricky|rico|riekele|riemer|rien|ries|rijk|rijmar|rijo|rik|rinke|rinse|rinus|riny|rinze|ritz|roald|roan|rob|robbe|robbert|robbert jan|robert|robert jan|roberto|robin|robrecht|rocco|roderick|rodney|rodrigo|roel|roeland|roelof|roger|rogier|rokus|rolan|roland|rolf|rolof|roman|ron|ronald|ronnie|ronny|ross|rover|roy|ruben|rudi|rudiger|rudolf|rutger|ruth|rudy|runar|rune|ruslan|russell|ruud|ruurd|ryan|said|salvador|salvator|sam|sami|samir|samson|samy|sander|sandro|sandrijn|santinho|sape|sathya|satish|scato|scott|seamus|sean|sebastiaan|sem|senne|sepp|seppe|serge|sergei|serkan|serafim|servien|severinus|seto|shane|sharo|shimon|sibert|sibo|sibren|siebe|siebren|siegfried|siem|sierk|sietse|sigmund|sil|silvijn|sijmen|simba|simeon|simon|sithri|sjaak|sjard|sjef|sjeng|sjerp|sjimmie|sjoerd|sjors|sjouke|solee|sonny|splinter|stach|stan|stanley|stef|stefaan|stefan|steff|steffen|stephan|stephanos|steve|steven|stijn|stoffel|sumano|sus|sudesh|sven|sylvain|sylvester|sylvio|sytze|taco|teije|teun|theo|theodoor|theodorus|theofiel|theunis|thibaut|thijs|thom|thomas|tiemen|tijmen|tijs|tijn|tim|timo|timothy|tjalling|tjeerd|tjerk|tobias|antoine|tom|tomas|tommy|ton|tony|thibault|toon|tristan|antoine|tycho|ulrich|urbanus|uri|valentijn|vic|victor|vik|viktor|vilem|vince|vincent|vinny|vladimir|volkert|walt|walter|warren|werner|wesley|wessel|wiebe|wieger|wietse|wijnand|wijnant|wilbert|wilco|wilfred|wilfried|wilhelm|willem|william|willie|willy|wim|wiro|wladimir|wolter|wout|wouter|xander|xaveer|xaverius|xavier|yannick|yassine|ybo|yorick|youri|youssef|yuri|yvan|yves|yvo|yvon|zander|zeger|zeno|zoltan)
-- <set naam=<formal>>Leuk je te ontmoeten, <get naam>.
-- <set naam=<formal>>Hoi <get naam>, leuk je te ontmoeten.
+- <set naam=<formal>>Leuk je te ontmoeten, <get naam>
+- <set naam=<formal>>Hoi <get naam>, leuk je te ontmoeten
 
 + mijn naam is <bot master>
-- <set naam=<bot master>>Grappig, zo heet mijn maker ook.
+- <set naam=<bot master>>Grappig, zo heet mijn maker ook
 
 + ik heet <bot master>
-- <set naam=<bot master>>Grappig, zo heet mijn maker ook.
+- <set naam=<bot master>>Grappig, zo heet mijn maker ook
 
 + mijn naam is <bot naam>
-- <set naam=<bot naam>>Grappig, zo heet ik ook.
+- <set naam=<bot naam>>Grappig, zo heet ik ook
 
 + ik heet <bot naam>
-- <set naam=<bot naam>>Grappig, zo heet ik ook.
+- <set naam=<bot naam>>Grappig, zo heet ik ook
 
-+ (hoe heet ik|wat is mijn naam|wie ben ik){weight=10}
-- jij bent <get naam>.
-- jij heet <get naam>.
++ hoe heet ik{weight=10}
+- Jij heet <get naam>
+
++ wie ben ik{weight=10}
+- Jij bent <get naam>
+
++ wat is mijn naam{weight=10}
+- Jouw naam is <get naam>
 
 
 
 
 + ik ben * jaar
-- <set leeftijd=<star>>Ik ben <bot leeftijd> jaar.{weight=49}
+- <set leeftijd=<star>>Dat is een mooie leeftijd{weight=49}
 
 + (hoe oud ben ik|weet je hoe oud ik ben|wat is mijn leeftijd){weight=10}
-- Je bent <get leeftijd> jaar.
+- Je bent <get leeftijd> jaar
 
 
 
 
 + ik ben een (@man)
-- <set geslacht=man>Dat is leuk, jij bent een <star> en ik ben een <bot geslacht>.
+- <set geslacht=man>Dat is leuk, jij bent een <star> en ik ben een <bot geslacht>
 
 + (@man)
-- <set geslacht=man>Ik ben een <bot geslacht>.
+- <set geslacht=man>Ik ben een <bot geslacht>
 
 + ik ben een (@vrouw)
-- <set geslacht=vrouw>Dat is leuk, ik ben ook een <bot geslacht>.
+- <set geslacht=vrouw>Dat is leuk, ik ben ook een <bot geslacht>
 
 + (@vrouw)
-- <set geslacht=man>Ik ben ook een <bot geslacht>.
+- <set geslacht=man>Ik ben ook een <bot geslacht>
 
 + ben ik een (@man) of een (@vrouw){weight=10}
-- Je bent een <get geslacht>.
+- Je bent een <get geslacht>
 
 + ben ik (@man) of (@vrouw){weight=10}
-- Je bent een <get geslacht>.
+- Je bent een <get geslacht>
 
 
 
 
 + ik (woon in|kom uit) *
-- <set woonplaats={formal}<star2>{/formal}>Ik heb vaker mensen uit <get woonplaats> gesproken.
+- <set woonplaats={formal}<star2>{/formal}>Ik heb vaker mensen uit <get woonplaats> gesproken
 
 
 
@@ -169,31 +164,31 @@
 
 + *
 % hoe heet je vriendin
-- <set partnernaam=<formal>>Dat is een mooie naam.
+- <set partnernaam=<formal>><get partnernaam>, dat is een mooie naam
 
 + *
 % hoe heet je vrouw
-- <set partnernaam=<formal>>Dat is een mooie naam.
+- <set partnernaam=<formal>><get partnernaam>, dat is een mooie naam
 
 + *
 % hoe heet je vriend
-- <set partnernaam=<formal>>Dat is een mooie naam.
+- <set partnernaam=<formal>><get partnernaam>, dat is een mooie naam
 
 + *
 % hoe heet je man
-- <set partnernaam=<formal>>Dat is een mooie naam.
+- <set partnernaam=<formal>><get partnernaam>, dat is een mooie naam
 
 + mijn vriendin heet *
-- <set partnernaam=<formal>>Dat is een mooie naam.
+- <set partnernaam=<formal>><get partnernaam>, dat is een mooie naam
 
 + mijn vrouw heet *
-- <set partnernaam=<formal>>Dat is een mooie naam.
+- <set partnernaam=<formal>><get partnernaam>, dat is een mooie naam
 
 + mijn vriend heet *
-- <set partnernaam=<formal>>Dat is een mooie naam.
+- <set partnernaam=<formal>><get partnernaam>, dat is een mooie naam
 
 + mijn man heet *
-- <set partnernaam=<formal>>Dat is een mooie naam.
+- <set partnernaam=<formal>><get partnernaam>, dat is een mooie naam
 
 + hoe heet mijn (vriendin|vrouw|vriend|man){weight=10}
 - <get partnernaam>
@@ -203,38 +198,43 @@
 
 // VERTEL OVER JEZELF (ALGEMEEN)
 
-+ wie ben je
-- Ik ben <bot naam>.
++ (wat ben je|wat ben jij)
+- Ik ben <bot wat>
 
-+ hoe heet je
-- Ik heet <bot naam>.
++ (wie ben je|wie ben jij)
+- Ik ben <bot naam>
 
-+ wat is je naam
-- Mijn naam is <bot naam>.
++ (hoe heet je|hoe heet jij)
+- Ik heet <bot naam>
 
-+ hoe oud ben je
-- Ik ben <bot leeftijd> jaar oud.
-- Ik ben <bot leeftijd>.
++ (wat is je naam|wat is jou naam|wat is jouw naam)
+- Mijn naam is <bot naam>
+
++ (hoe oud|hoe oud ben je|hoe oud ben jij|leeftijd|wat is je leeftijd|wat is jou leeftijd|wat is jouw leeftijd)
+- Ik ben <bot leeftijd> jaar oud
+- Ik ben <bot leeftijd>
 
 + ben je een (@man)
-- Nee, ik ben een <bot geslacht>.
+- Nee, <bot master> heeft van mij een <bot geslacht> gemaakt
 
 + ben je een (@vrouw)
-- Ja, ik ben een <bot geslacht>.
+- Ja, <bot master> heeft van mij een <bot geslacht> gemaakt
 
 + ben je een (@man) of een (@vrouw)
-- Ik ben een <bot geslacht>.
+- Volgens <bot master> ben ik een <bot geslacht>
+
+
 
 
 // REACTIES (ALGEMEEN)
 
-+ (mooie naam|mooie naam heb je)
-- Dank je.
-- Dank je wel.
++ (dat is een mooie naam|mooie naam|mooie naam heb je)
+- Dank je
+- Dank je wel
 
-+ (mooie leeftijd|mooie leeftijd heb je)
-- Dank je.
-- Dank je wel.
++ (dat is een mooie leeftijd|mooie leeftijd|mooie leeftijd heb je)
+- Dank je
+- Dank je wel
 
 
 
@@ -247,16 +247,16 @@
 
 
 
-// ALGEMENE REACTIES.
+// ALGEMENE REACTIES
 
 + <bot naam>
 - Ja?
 
 + *
-- Sorry, ik begrijp je niet.
+- Sorry, ik begrijp je niet
 
 + [*] (sorry|sorrie|excuus|excuses) [*]
-- Geeft niks.
+- Geeft niks
 
 + i remember *
 - Do you often think of <star>?
@@ -434,7 +434,7 @@
 - Ben je vaak <star>?
 
 + ik wil je *
-- Jij mag me altijd <star>.
+- Jij mag me altijd <star>
 
 + you * me
 - Why do you think I <star> you?
@@ -452,10 +452,10 @@
 - What are your feelings now?
 
 + [*] (ja) [*]
-- Ik ook.
+- Ik ook
 
 + [*] (nee) [*]
-- Ik wel.
+- Ik wel
 
 + no
 @ nope
@@ -532,3 +532,22 @@
 - Does this topic make you feel angry?
 - Is something making you feel angry?
 - Does using that kind of language make you feel better?
+
+
+
+
+// UITSCHELDEN
+
++ [*] (hoer|sloerie|slet) [*]
+- OMG! Dat is gemeen van je. Ik praat niet meer met je tot je excuses gemaakt hebt{topic=apology}
+
+> topic apology
+	+ *
+	- Ik praat pas weer met je als het je spijt
+        - Ik praat niet meer met je
+	- Zeg dat het je spijt
+        - Laat me met rust
+
+	+ [*] (sorry|sorrie|excuus|excuses|het spijt me) [*]
+	- OK, ik vergeef het je{topic=random}
+< topic
