@@ -9,9 +9,9 @@
 ! var master = localuser
 
 // Bot Variables
-! var name     = Sletbot
-! var fullname = Aiden Rive
-! var age      = 5
+! var naam     = Sletbot
+! var fullname = Sletbot versie 1.0
+! var age      = 19
 ! var birthday = October 12
 ! var sex      = male
 ! var location = Michigan
