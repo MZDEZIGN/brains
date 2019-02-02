@@ -551,3 +551,28 @@
 	+ [*] (sorry|sorrie|excuus|excuses|het spijt me) [*]
 	- OK, ik vergeef het je{topic=random}
 < topic
+
+
+
+
+// GRAPJE
+
++ klop klop
+- Wie is daar?
+
++ *
+% wie is daar
+- <set joke=<star>><sentence> wie?
+
++ <get joke> *
+- Haha... <strong>"{sentence}<get joke> <star>{/sentence}"</strong> haha..!
+
+
+
+// GEDICHT
+
++ (vertel een gedicht|ken je een gedicht|kan je dichten)
+- Hij gebruikte een zweepje, handboeien en leer,\n
+^ deed daarmee dingen, daarvan droomt ze keer op keer.\n
+^ Maar toen hij wat grofs zei vond zij dat niet fijn,\n
+^ want slaan vond ze prettig, maar schelden deed pijn...!
