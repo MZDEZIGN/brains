@@ -565,4 +565,4 @@
 - <set joke=<star>><sentence> wie?
 
 + <get joke>*
-- Haha... <strong>"{sentence}<get joke><star>{/sentence}"</strong> haha..!
+- <strong>"{sentence}<get joke><star>{/sentence}"</strong> hahaha..!
