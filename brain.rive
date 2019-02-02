@@ -571,10 +571,13 @@
 
 // GEDICHT
 
-+ (vertel een gedicht|ken je een gedicht|kan je dichten)
--Ik vind dit een heel mooi gedicht..:<br>
++ ken je een gedicht
+- <strong>Ik vind dit wel een heel mooi gedicht..:</strong><br>
 ^ <br>
-^ Hij gebruikte een zweepje, handboeien en leer,<br>
-^ deed daarmee dingen, daarvan droomt ze keer op keer.<br>
-^ Maar toen hij wat grofs zei vond zij dat niet fijn,<br>
-^ want slaan vond ze prettig, maar schelden deed pijn...!
+^ Hij gebruikte een zweepje, handboeien en leer<br>
+^ <br>
+^ Hij deed daarmee dingen, daarvan droomt ze keer op keer.<br>
+^ <br>
+^ Maar toen hij wat grofs zei vond zij dat niet fijn.<br>
+^ <br>
+^ wWant slaan vindt ze prettig, maar schelden doet pijn...!
