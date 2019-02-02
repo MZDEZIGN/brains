@@ -538,8 +538,8 @@
 
 // UITSCHELDEN
 
-+ [*] (hoer|sloerie|slet) [*]
-- OMG! Dat is gemeen van je. Ik praat niet meer met je tot je excuses gemaakt hebt{topic=apology}
++ [*] (hoer|hoertje|sloerie|slet|sletje) [*]
+- OMG! Ik vind het niet fijn vind dat je dat zegt{topic=apology}
 
 > topic apology
 	+ *
@@ -564,5 +564,5 @@
 % wie is daar
 - <set joke=<star>><sentence> wie?
 
-+ <get joke> *
-- Haha... <strong>"{sentence}<get joke> <star>{/sentence}"</strong> haha..!
++ <get joke>*
+- Haha... <strong>"{sentence}<get joke><star>{/sentence}"</strong> haha..!
