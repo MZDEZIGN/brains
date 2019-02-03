@@ -586,7 +586,7 @@
 
 
 
-// LAAT EEN FOTO ZIEN
+// LAAT EEN FOTO ZIEN AAN GEBRUIKER
 
 +foto
 - <img src="gfx/foto-001.jpg" alt="Italian Trulli">
