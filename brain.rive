@@ -566,3 +566,24 @@
 
 + <get joke>*
 - <strong>"{sentence}<get joke><star>{/sentence}"</strong> hahaha..!
+
+
+
+
+// GOOGLE IETS
+
++ {weight=100}weet je wat * is
+- Ik heb het even voor je opgezocht: <call>google <star></call>
+
+> object google javascript
+	var query = escape(args.join(" "));
+	return "<a href=\"http://www.google.com/search?q=" + query + "\" target=\"_blank\"><strong>klik hier >></strong></a>";
+< object
+
+
+
+
+// LAAT EEN FOTO ZIEN
+
++foto
+- <img src="https://www.w3schools.com/HTML/img_chania.jpg" alt="Italian Trulli">
