@@ -37,6 +37,13 @@
 
 	> topic kut-kaal
 
+		+ [*] (mooi|lekker|geil|sexy|heerlijk|hou van) [*]
+			- Dank je
+			- Dank je wel
+
+		+ [*] (zien|foto) [*]
+			- <img src="gfx/foto-kutje.jpg" alt="kutje">
+
 
 		// DOORVERWIJZINGEN BOT | KUT
 
@@ -81,6 +88,13 @@
 
 	> topic kut-nat
 
+		+ [*] (mooi|lekker|geil|sexy|heerlijk|hou van) [*]
+			- Dank je
+			- Dank je wel
+
+		+ [*] (zien|foto) [*]
+			- <img src="gfx/foto-kutje.jpg" alt="kutje">
+
 
 		// DOORVERWIJZINGEN BOT | KUT
 
@@ -124,6 +138,13 @@
 	- <bot door-kut-strak>{topic=kut-strak}
 
 	> topic kut-strak
+
+		+ [*] (mooi|lekker|geil|sexy|heerlijk|hou van) [*]
+			- Dank je
+			- Dank je wel
+
+		+ [*] (zien|foto) [*]
+			- <img src="gfx/foto-kutje.jpg" alt="kutje">
 
 
 		// DOORVERWIJZINGEN BOT | KUT
