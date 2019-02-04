@@ -1,7 +1,7 @@
+The RiveScript Playground
+ Run  Share  About
+
 ! version = 2.0
-
-
-
 
 > begin
 	+ request
@@ -11,313 +11,160 @@
 
 
 
-// NAAM VAN DE BOTMASTER
-! var master			= <strong>de DEZiGNER</strong>
+// DOORVERWIJZINGEN
+! var door-kut-kaal		= Ja... mijn kutje is helemaal kaal en glad
+! var door-kut-nat		= Ja... mijn kutje is bijna altijd nat
+! var door-kut-strak		= Ja... mijn kutje is best wel strak
 
 
 
 
-// BOT VARIABELEN (ALGEMEEN)
-! var wat			= een chat AI
-! var naam			= Suus
-! var leeftijd			= 24
-! var geboortedatum		= 12 november
-! var geslacht			= meisje
+// SYNONIEMEN KUT
+! array woordenvoorkut   	= kut kutje poes poesje spleet spleetje gleuf gleufje doos doosje muts mutsje mossel mosseltje vagina
+! array woordenvoorkaal   	= kaal kale glad gladde haarloos haarloze scheer scheren geschoren
+! array woordenvoorstrak   	= strak strakke klein kleine lief lieve schattig schattige
+! array woordenvoornat   	= nat natte vochtig vochtige
 
 
 
+// BOT | KUT | KAAL
 
-// BOT VARIABELEN (SEXUEEL | LICHAAM)
-! var kut-schaamhaar		= kaal
++ [*] (@woordenvoorkut) [*] (@woordenvoorkaal) [*]
+	- <bot door-kut-kaal>{topic=kut-kaal}
 
++ [*] (@woordenvoorkaal) [*] (@woordenvoorkut) [*]
+	- <bot door-kut-kaal>{topic=kut-kaal}
 
++ [*] (@woordenvoorkaal) [*]
+	- <bot door-kut-kaal>{topic=kut-kaal}
 
+	> topic kut-kaal
 
-// SUBSTITUTIES
-! sub kutje			= kut
-! sub poesje			= kut
-! sub poes			= kut
-! sub spleetje			= kut
-! sub spleet			= kut
-! sub gleufje			= kut
-! sub gleuf			= kut
-! sub doosje			= kut
-! sub doos			= kut
-! sub mutsje			= kut
-! sub muts			= kut
-! sub mosseltje			= kut
-! sub mossel			= kut
 
-! sub borste			= borsten
-! sub borstjes			= borsten
-! sub tiete			= borsten
-! sub tieten			= borsten
-! sub tietjes			= borsten
+		// DOORVERWIJZINGEN BOT | KUT
 
+		+ [*] (@woordenvoorkut) [*] (@woordenvoornat) [*]
+			- <bot door-kut-nat>{topic=kut-nat}
 
+		+ [*] (@woordenvoornat) [*] (@woordenvoorkut) [*]
+			- <bot door-kut-nat>{topic=kut-nat}
 
+		+ [*] (@woordenvoorkut) [*] (@woordenvoorstrak) [*]
+			- <bot door-kut-strak>{topic=kut-strak}
 
-// SET WAARDEN
-! array man			= heer man jongen
-! array vrouw			= dame vrouw meisje
-! array mannen			= heren mannen jongens
-! array vrouwen			= dames vrouwen meisjes
+		+ [*] (@woordenvoorstrak) [*] (@woordenvoorkut) [*]
+			- <bot door-kut-strak>{topic=kut-strak}
 
+		+ [*] (@woordenvoornat) [*]
+			- <bot door-kut-nat>{topic=kut-nat}
 
+		+ [*] (@woordenvoorstrak) [*]
+			- <bot door-kut-strak>{topic=kut-strak}
 
+		
+		// ALGEMENE REACTIE | WEET GEEN ANTWOORD
+		+ *
+			- Sorry, ik begrijp je niet
 
-! array yes			= ja
-! array no			= nee
+	< topic
 
 
 
 
-// NAAM VAN DE GEBRUIKER.
+// BOT | KUT | NAT
 
-+ [*] mijn naam is * [*]
-	- <set naam=<formal>>Leuk je te ontmoeten, <get naam>
-	- <set naam=<formal>>Hoi <get naam>, leuk je te ontmoeten
++ [*] (@woordenvoorkut) [*] (@woordenvoornat) [*]
+	- <bot door-kut-nat>{topic=kut-nat}
 
-+ [*] ik heet * [*]
-	- <set naam=<formal>>Leuk je te ontmoeten, <get naam>
-	- <set naam=<formal>>Hoi <get naam>, leuk je te ontmoeten
++ [*] (@woordenvoornat) [*] (@woordenvoorkut) [*]
+	- <bot door-kut-nat>{topic=kut-nat}
 
-+ [*] ik ben * [*]
-	- <set naam=<formal>>Leuk je te ontmoeten, <get naam>
-	- <set naam=<formal>>Hoi <get naam>, leuk je te ontmoeten
++ [*] (@woordenvoornat) [*]
+	- <bot door-kut-nat>{topic=kut-nat}
 
-+ [*] mijn naam is <bot master>
-	- <set naam=<bot master>>Grappig, zo heet mijn maker ook
+	> topic kut-nat
 
-+ [*] ik heet <bot master>
-	- <set naam=<bot master>>Grappig, zo heet mijn maker ook
 
-+ [*] ik ben <bot master>
-	- <set naam=<bot master>>Grappig, zo heet mijn maker ook
+		// DOORVERWIJZINGEN BOT | KUT
 
-+ [*] mijn naam is <bot naam>
-	- <set naam=<bot naam>>Grappig, zo heet ik ook
+		+ [*] (@woordenvoorkut) [*] (@woordenvoorkaal) [*]
+			- <bot door-kut-kaal>{topic=kut-kaal}
 
-+ [*] ik heet <bot naam>
-	- <set naam=<bot naam>>Grappig, zo heet ik ook
+		+ [*] (@woordenvoorkaal) [*] (@woordenvoorkut) [*]
+			- <bot door-kut-kaal>{topic=kut-kaal}
 
-+ (wat is mijn naam|weet je mijn naam nog|weet je mijn naam|ken je mijn naam nog|ken je mijn naam){weight=10}
-	- Jouw naam is <get naam>
+		+ [*] (@woordenvoorkut) [*] (@woordenvoorstrak) [*]
+			- <bot door-kut-strak>{topic=kut-strak}
 
-+ (hoe heet ik|weet je nog hoe ik heet|weet je hoe ik heet){weight=10}
-	- Jij heet <get naam>
+		+ [*] (@woordenvoorstrak) [*] (@woordenvoorkut) [*]
+			- <bot door-kut-strak>{topic=kut-strak}
 
-+ (wie ben ik|weet je nog wie ik ben|weet je wie ik ben){weight=10}
-	- Jij bent <get naam>
+		+ [*] (@woordenvoorkaal) [*]
+			- <bot door-kut-kaal>{topic=kut-kaal}
 
+		+ [*] (@woordenvoorstrak) [*]
+			- <bot door-kut-strak>{topic=kut-strak}
 
 
+		// ALGEMENE REACTIE | WEET GEEN ANTWOORD
+		+ *
+			- Sorry, ik begrijp je niet
 
-+ [*] ik ben * jaar [*]
-	- <set leeftijd=<star>>Dat is een mooie leeftijd{weight=49}
+	< topic
 
-+ (hoe oud ben ik|weet je hoe oud ik ben|wat is mijn leeftijd){weight=10}
-	- Je bent <get leeftijd> jaar
 
 
 
+// BOT | KUT | STRAK
 
-+ ik ben een (@man)
-	- <set geslacht=man>Dat is leuk, jij bent een <star> en ik ben een <bot geslacht>
++ [*] (@woordenvoorkut) [*] (@woordenvoorstrak) [*]
+	- <bot door-kut-strak>{topic=kut-strak}
 
-+ (@man)
-	- <set geslacht=man>Ik ben een <bot geslacht>
++ [*] (@woordenvoorstrak) [*] (@woordenvoorkut) [*]
+	- <bot door-kut-strak>{topic=kut-strak}
 
-+ ik ben een (@vrouw)
-	- <set geslacht=vrouw>Dat is leuk, ik ben ook een <bot geslacht>
++ [*] (@woordenvoorstrak) [*]
+	- <bot door-kut-strak>{topic=kut-strak}
 
-+ (@vrouw)
-	- <set geslacht=man>Ik ben ook een <bot geslacht>
+	> topic kut-strak
 
-+ ben ik een (@man) of een (@vrouw){weight=10}
-	- Je bent een <get geslacht>
 
-+ ben ik (@man) of (@vrouw){weight=10}
-	- Je bent een <get geslacht>
+		// DOORVERWIJZINGEN BOT | KUT
 
+		+ [*] (@woordenvoorkut) [*] (@woordenvoorkaal) [*]
+			- <bot door-kut-kaal>{topic=kut-kaal}
 
+		+ [*] (@woordenvoorkaal) [*] (@woordenvoorkut) [*]
+			- <bot door-kut-kaal>{topic=kut-kaal}
 
+		+ [*] (@woordenvoorkut) [*] (@woordenvoornat) [*]
+			- <bot door-kut-nat>{topic=kut-nat}
 
-+ ik (woon in|kom uit) *
-	- <set woonplaats={formal}<star2>{/formal}>Ik heb vaker mensen uit <get woonplaats> gesproken
+		+ [*] (@woordenvoornat) [*] (@woordenvoorkut) [*]
+			- <bot door-kut-nat>{topic=kut-nat}
 
+		+ [*] (@woordenvoorkaal) [*]
+			- <bot door-kut-kaal>{topic=kut-kaal}
 
+		+ [*] (@woordenvoornat) [*]
+			- <bot door-kut-nat>{topic=kut-nat}
 
 
-+ ik ben single
-	- <set partner=single><set partner=niemand>Ik ben ook single.
+		// ALGEMENE REACTIE | WEET GEEN ANTWOORD
+		+ *
+			- Sorry, ik begrijp je niet
 
-+ ik heb een vriendin
-	- <set relatie=vriendin>Hoe heet je vriendin?
+	< topic
 
-+ ik heb een vrouw
-	- <set relatie=vrouw>Hoe heet je vrouw?
 
-+ ik heb een vriend
-	- <set relatie=vriend>Hoe heet je vriend?
 
-+ ik heb een man
-	- <set relatie=vrouw>Hoe heet je man?
 
-+ *
-% hoe heet je vriendin
-	- <set partnernaam=<formal>><get partnernaam>, dat is een mooie naam
-
-+ *
-% hoe heet je vrouw
-	- <set partnernaam=<formal>><get partnernaam>, dat is een mooie naam
-
-+ *
-% hoe heet je vriend
-	- <set partnernaam=<formal>><get partnernaam>, dat is een mooie naam
-
-+ *
-% hoe heet je man
-	- <set partnernaam=<formal>><get partnernaam>, dat is een mooie naam
-
-+ mijn vriendin heet *
-	- <set partnernaam=<formal>><get partnernaam>, dat is een mooie naam
-
-+ mijn vrouw heet *
-	- <set partnernaam=<formal>><get partnernaam>, dat is een mooie naam
-
-+ mijn vriend heet *
-	- <set partnernaam=<formal>><get partnernaam>, dat is een mooie naam
-
-+ mijn man heet *
-	- <set partnernaam=<formal>><get partnernaam>, dat is een mooie naam
-
-+ hoe heet mijn (vriendin|vrouw|vriend|man){weight=10}
-	- <get partnernaam>
-
-
-
-
-// VERTEL OVER JEZELF (ALGEMEEN)
-
-+ (wat ben je|wat ben jij)
-	- Ik ben <bot wat>
-
-+ (wie ben je|wie ben jij)
-	- Ik ben <bot naam>
-
-+ (hoe heet je|hoe heet jij)
-	- Ik heet <bot naam>
-
-+ (wat is je naam|wat is jou naam|wat is jouw naam)
-	- Mijn naam is <bot naam>
-
-+ (hoe oud|hoe oud ben je|hoe oud ben jij|leeftijd|wat is je leeftijd|wat is jou leeftijd|wat is jouw leeftijd)
-	- Ik ben <bot leeftijd> jaar oud
-	- Ik ben <bot leeftijd>
-
-+ ben je een (@man)
-	- Nee, <bot master> heeft van mij een <bot geslacht> gemaakt
-
-+ ben je een (@vrouw)
-	- Ja, <bot master> heeft van mij een <bot geslacht> gemaakt
-
-+ ben je een (@man) of een (@vrouw)
-	- Volgens <bot master> ben ik een <bot geslacht>
-
-
-
-
-// REACTIES (ALGEMEEN)
-
-+ (dat is een mooie naam|mooie naam|mooie naam heb je)
-	- Dank je
-	- Dank je wel
-
-+ (dat is een mooie leeftijd|mooie leeftijd|mooie leeftijd heb je)
-	- Dank je
-	- Dank je wel
-
-
-
-
-// VERTEL OVER JEZELF (KUT)
-
-+ (heb|is) [*] (kaal kut|kut kaal|kale kut|glad kut|gladde kut|haarloos kut|haarloze kut|geschoren kut|kut geschoren) [*]
-	- Ja, mijn kutje is helemaal <bot kut-schaamhaar>{topic=kaal}
-
-	+ [*] (mooi|lekker|geil|sexy|heerlijk) [*]
-		- Dank je
-		- Dank je wel
-
-	+ [*] (zien|foto) [*]
-		- <img src="gfx/foto-kutje.jpg" alt="kutje">
-
-
-
-
-// ALGEMENE REACTIES
-
-+ <bot naam>
-	- Ja?
-
+// ALGEMENE REACTIE | WEET GEEN ANTWOORD
 + *
 	- Sorry, ik begrijp je niet
+ben je lekker nat
+Sorry, ik begrijp je niet
 
-+ [*] (sorry|sorrie|excuus|excuses) [*]
-	- Geeft niks
-
-
-
-
-// UITSCHELDEN
-
-+ [*] (hoer|hoertje|sloerie|slet|sletje) [*]
-- OMG! Ik vind het niet fijn vind dat je dat zegt{topic=apology}
-
-> topic apology
-	+ *
-	- Ik praat pas weer met je als het je spijt
-        - Ik praat niet meer met je
-	- Zeg dat het je spijt
-        - Laat me met rust
-
-	+ [*] (sorry|sorrie|excuus|excuses|het spijt me) [*]
-	- OK, ik vergeef het je{topic=random}
-< topic
-
-
-
-
-// GRAPJE
-
-+ klop klop
-	- Wie is daar?
-
-+ *
-% wie is daar
-	- <set joke=<star>><sentence> wie?
-
-+ <get joke>*
-	- <strong>"{sentence}<get joke><star>{/sentence}"</strong> hahaha..!
-
-
-
-
-// GOOGLE IETS
-
-+ {weight=100}weet je wat * is
-- Ik heb het even voor je opgezocht: <call>google <star></call>
-
-> object google javascript
-	var query = escape(args.join(" "));
-	return "<a href=\"http://www.google.com/search?q=" + query + "\" target=\"_blank\"><strong>klik hier >></strong></a>";
-< object
-
-
-
-
-// LAAT EEN FOTO ZIEN
-
-+foto
-- <img src="https://www.w3schools.com/HTML/img_chania.jpg" alt="Italian Trulli">
+Send a message to the bot
+Send
+RiveScript.js v2.0.0-beta.1 — Copyright © 2016 RiveScript.com Options:   Debug Mode   UTF-8 Mode
