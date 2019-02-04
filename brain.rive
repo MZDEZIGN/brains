@@ -16,54 +16,54 @@
 
 
 
-// SYNONIEMEN KUT
-! array woordenvoorkut   	= kut kutje poes poesje spleet spleetje gleuf gleufje doos doosje muts mutsje mossel mosseltje vagina
+// SYNONIEMEN VOOR EN OVER DE VAGIBA VAN DE BOT
+! array woordenvoorvagina   	= vagina kut kutje poes poesje spleet spleetje gleuf gleufje doos doosje muts mutsje mossel mosseltje
 ! array woordenvoorkaal   	= kaal kale glad gladde haarloos haarloze scheer scheren geschoren
 ! array woordenvoorstrak   	= strak strakke klein kleine lief lieve schattig schattige
 ! array woordenvoornat   	= nat natte vochtig vochtige
 
 
 
-// BOT | KUT | KAAL
+// BOT | VAGINA | KAAL
 
-+ [*] (@woordenvoorkut) [*] (@woordenvoorkaal) [*]
-	- <bot door-kut-kaal>{topic=kut-kaal}
++ [*] (@woordenvoorvagina) [*] (@woordenvoorkaal) [*]
+	- <bot door-vagina-kaal>{topic=vagina-kaal}
 
-+ [*] (@woordenvoorkaal) [*] (@woordenvoorkut) [*]
-	- <bot door-kut-kaal>{topic=kut-kaal}
++ [*] (@woordenvoorkaal) [*] (@woordenvoorvagina) [*]
+	- <bot door-vagina-kaal>{topic=vagina-kaal}
 
 + [*] (@woordenvoorkaal) [*]
-	- <bot door-kut-kaal>{topic=kut-kaal}
+	- <bot door-vagina-kaal>{topic=vagina-kaal}
 
-	> topic kut-kaal
+	> topic vagina-kaal
 
 		+ [*] (mooi|lekker|geil|sexy|heerlijk|hou van) [*]
 			- Dank je
 			- Dank je wel
 
 		+ [*] (zien|foto) [*]
-			- <img src="gfx/foto-kutje.jpg" alt="kutje">
+			- <img src="gfx/foto-vagina-kaal.jpg" alt="vagina kaal">
 
 
-		// DOORVERWIJZINGEN BOT | KUT
+		// DOORVERWIJZINGEN BOT | VAGINA
 
-		+ [*] (@woordenvoorkut) [*] (@woordenvoornat) [*]
-			- <bot door-kut-nat>{topic=kut-nat}
+		+ [*] (@woordenvoorvagina) [*] (@woordenvoornat) [*]
+			- <bot door-vagina-nat>{topic=vagina-nat}
 
-		+ [*] (@woordenvoornat) [*] (@woordenvoorkut) [*]
-			- <bot door-kut-nat>{topic=kut-nat}
+		+ [*] (@woordenvoornat) [*] (@woordenvoorvagina) [*]
+			- <bot door-vagina-nat>{topic=vagina-nat}
 
-		+ [*] (@woordenvoorkut) [*] (@woordenvoorstrak) [*]
-			- <bot door-kut-strak>{topic=kut-strak}
+		+ [*] (@woordenvoorvagina) [*] (@woordenvoorstrak) [*]
+			- <bot door-vagina-strak>{topic=vagina-strak}
 
-		+ [*] (@woordenvoorstrak) [*] (@woordenvoorkut) [*]
-			- <bot door-kut-strak>{topic=kut-strak}
+		+ [*] (@woordenvoorstrak) [*] (@woordenvoorvagina) [*]
+			- <bot door-vagina-strak>{topic=vagina-strak}
 
 		+ [*] (@woordenvoornat) [*]
-			- <bot door-kut-nat>{topic=kut-nat}
+			- <bot door-vagina-nat>{topic=vagina-nat}
 
 		+ [*] (@woordenvoorstrak) [*]
-			- <bot door-kut-strak>{topic=kut-strak}
+			- <bot door-vagina-strak>{topic=vagina-strak}
 
 		
 		// ALGEMENE REACTIE | WEET GEEN ANTWOORD
@@ -75,46 +75,46 @@
 
 
 
-// BOT | KUT | NAT
+// BOT | VAGINA | NAT
 
-+ [*] (@woordenvoorkut) [*] (@woordenvoornat) [*]
-	- <bot door-kut-nat>{topic=kut-nat}
++ [*] (@woordenvoorvagina) [*] (@woordenvoornat) [*]
+	- <bot door-vagina-nat>{topic=vagina-nat}
 
-+ [*] (@woordenvoornat) [*] (@woordenvoorkut) [*]
-	- <bot door-kut-nat>{topic=kut-nat}
++ [*] (@woordenvoornat) [*] (@woordenvoorvagina) [*]
+	- <bot door-vagina-nat>{topic=vagina-nat}
 
 + [*] (@woordenvoornat) [*]
-	- <bot door-kut-nat>{topic=kut-nat}
+	- <bot door-vagina-nat>{topic=vagina-nat}
 
-	> topic kut-nat
+	> topic vagina-nat
 
 		+ [*] (mooi|lekker|geil|sexy|heerlijk|hou van) [*]
 			- Dank je
 			- Dank je wel
 
 		+ [*] (zien|foto) [*]
-			- <img src="gfx/foto-kutje.jpg" alt="kutje">
+			- <img src="gfx/foto-vagina-nat.jpg" alt="vagina nat">
 
 
-		// DOORVERWIJZINGEN BOT | KUT
+		// DOORVERWIJZINGEN BOT | VAGINA
 
-		+ [*] (@woordenvoorkut) [*] (@woordenvoorkaal) [*]
-			- <bot door-kut-kaal>{topic=kut-kaal}
+		+ [*] (@woordenvoorvagina) [*] (@woordenvoorkaal) [*]
+			- <bot door-vagina-kaal>{topic=vagina-kaal}
 
-		+ [*] (@woordenvoorkaal) [*] (@woordenvoorkut) [*]
-			- <bot door-kut-kaal>{topic=kut-kaal}
+		+ [*] (@woordenvoorkaal) [*] (@woordenvoorvagina) [*]
+			- <bot door-vagina-kaal>{topic=vagina-kaal}
 
-		+ [*] (@woordenvoorkut) [*] (@woordenvoorstrak) [*]
-			- <bot door-kut-strak>{topic=kut-strak}
+		+ [*] (@woordenvoorvagina) [*] (@woordenvoorstrak) [*]
+			- <bot door-vagina-strak>{topic=vagina-strak}
 
-		+ [*] (@woordenvoorstrak) [*] (@woordenvoorkut) [*]
-			- <bot door-kut-strak>{topic=kut-strak}
+		+ [*] (@woordenvoorstrak) [*] (@woordenvoorvagina) [*]
+			- <bot door-vagina-strak>{topic=vagina-strak}
 
 		+ [*] (@woordenvoorkaal) [*]
-			- <bot door-kut-kaal>{topic=kut-kaal}
+			- <bot door-vagina-kaal>{topic=vagina-kaal}
 
 		+ [*] (@woordenvoorstrak) [*]
-			- <bot door-kut-strak>{topic=kut-strak}
+			- <bot door-vagina-strak>{topic=vagina-strak}
 
 
 		// ALGEMENE REACTIE | WEET GEEN ANTWOORD
@@ -126,46 +126,46 @@
 
 
 
-// BOT | KUT | STRAK
+// BOT | VAGINA | STRAK
 
-+ [*] (@woordenvoorkut) [*] (@woordenvoorstrak) [*]
-	- <bot door-kut-strak>{topic=kut-strak}
++ [*] (@woordenvoorvagina) [*] (@woordenvoorstrak) [*]
+	- <bot door-vagina-strak>{topic=vagina-strak}
 
-+ [*] (@woordenvoorstrak) [*] (@woordenvoorkut) [*]
-	- <bot door-kut-strak>{topic=kut-strak}
++ [*] (@woordenvoorstrak) [*] (@woordenvoorvagina) [*]
+	- <bot door-vagina-strak>{topic=vagina-strak}
 
 + [*] (@woordenvoorstrak) [*]
-	- <bot door-kut-strak>{topic=kut-strak}
+	- <bot door-vagina-strak>{topic=vagina-strak}
 
-	> topic kut-strak
+	> topic vagina-strak
 
 		+ [*] (mooi|lekker|geil|sexy|heerlijk|hou van) [*]
 			- Dank je
 			- Dank je wel
 
 		+ [*] (zien|foto) [*]
-			- <img src="gfx/foto-kutje.jpg" alt="kutje">
+			- <img src="gfx/foto-vagina-strak.jpg" alt="vagina strak">
 
 
-		// DOORVERWIJZINGEN BOT | KUT
+		// DOORVERWIJZINGEN BOT | VAGINA
 
-		+ [*] (@woordenvoorkut) [*] (@woordenvoorkaal) [*]
-			- <bot door-kut-kaal>{topic=kut-kaal}
+		+ [*] (@woordenvoorvagina) [*] (@woordenvoorkaal) [*]
+			- <bot door-vagina-kaal>{topic=vagina-kaal}
 
-		+ [*] (@woordenvoorkaal) [*] (@woordenvoorkut) [*]
-			- <bot door-kut-kaal>{topic=kut-kaal}
+		+ [*] (@woordenvoorkaal) [*] (@woordenvoorvagina) [*]
+			- <bot door-vagina-kaal>{topic=vagina-kaal}
 
-		+ [*] (@woordenvoorkut) [*] (@woordenvoornat) [*]
-			- <bot door-kut-nat>{topic=kut-nat}
+		+ [*] (@woordenvoorvagina) [*] (@woordenvoornat) [*]
+			- <bot door-vagina-nat>{topic=vagina-nat}
 
-		+ [*] (@woordenvoornat) [*] (@woordenvoorkut) [*]
-			- <bot door-kut-nat>{topic=kut-nat}
+		+ [*] (@woordenvoornat) [*] (@woordenvoorvagina) [*]
+			- <bot door-vagina-nat>{topic=vagina-nat}
 
 		+ [*] (@woordenvoorkaal) [*]
-			- <bot door-kut-kaal>{topic=kut-kaal}
+			- <bot door-vagina-kaal>{topic=vagina-kaal}
 
 		+ [*] (@woordenvoornat) [*]
-			- <bot door-kut-nat>{topic=kut-nat}
+			- <bot door-vagina-nat>{topic=vagina-nat}
 
 
 		// ALGEMENE REACTIE | WEET GEEN ANTWOORD
