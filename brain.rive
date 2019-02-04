@@ -8,175 +8,371 @@
 
 
 
-// DOORVERWIJZINGEN
-! var door-vagina-kaal		= Ja... mijn kutje is helemaal kaal en glad
-! var door-vagina-nat		= Ja... mijn kutje is bijna altijd nat
-! var door-vagina-strak		= Ja... mijn kutje is best wel strak
+// SUBSTITUTIES | BOT | BORSTEN | MOOI
+! sub borsten mooi		= borsten zijn mooi
+! sub borstjes mooi		= borstjes zijn mooi
+! sub borsten lekker		= borsten zijn lekker
+! sub borstjes lekker		= borstjes zijn lekker
+
+! sub blote borsten		= borsten zijn mooi
+! sub mooi borstjes		= borstjes zijn mooi
+! sub lekkere borsten		= borsten zijn lekker
+! sub lekker borstjes		= borstjes zijn lekker
+
+! sub tieten mooi		= tieten zijn mooi
+! sub tietjes mooi		= tietjes zijn mooi
+! sub tieten lekker		= tieten zijn lekker
+! sub tietjes lekker		= tietjes zijn lekker
+
+! sub blote tieten		= tieten zijn mooi
+! sub mooi tietjes		= tietjes zijn mooi
+! sub lekkere tieten		= tieten zijn lekker
+! sub lekker tietjes		= tietjes zijn lekker
 
 
+// SUBSTITUTIES | BOT | BORSTEN | BLOOT
+! sub borsten bloot		= borsten zijn bloot
+! sub borstjes bloot		= borstjes zijn bloot
+! sub borsten naakt		= borsten zijn naakt
+! sub borstjes naakt		= borstjes zijn naakt
+
+! sub blote borsten		= borsten zijn bloot
+! sub bloot borstjes		= borstjes zijn bloot
+! sub naakte borsten		= borsten zijn naakt
+! sub naakt borstjes		= borstjes zijn naakt
+
+! sub tieten bloot		= tieten zijn bloot
+! sub tietjes bloot		= tietjes zijn bloot
+! sub tieten naakt		= tieten zijn naakt
+! sub tietjes naakt		= tietjes zijn naakt
+
+! sub blote tieten		= tieten zijn bloot
+! sub bloot tietjes		= tietjes zijn bloot
+! sub naakte tieten		= tieten zijn naakt
+! sub naakt tietjes		= tietjes zijn naakt
+
+
+// SUBSTITUTIES | BOT | BORSTEN | FORMAAT
+! sub borsten klein		= borsten zijn klein
+! sub borstjes klein		= borstjes zijn klein
+! sub borsten groot		= borsten zijn groot
+! sub borstjes groot		= borstjes zijn groot
+
+! sub klein borsten		= borsten zijn klein
+! sub klein borstjes		= borstjes zijn klein
+! sub groot borsten		= borsten zijn groot
+! sub groot borstjes		= borstjes zijn groot
+
+! sub tieten klein		= tieten zijn klein
+! sub tietjes klein		= tietjes zijn klein
+! sub tieten groot		= tieten zijn groot
+! sub tietjes groot		= tietjes zijn groot
+
+! sub kleine tieten		= tieten zijn klein
+! sub kleine tietjes		= tietjes zijn klein
+! sub grote tieten		= tieten zijn groot
+! sub grote tietjes		= tietjes zijn groot
+
+
+
+
+// SUBSTITUTIES | BOT | TEPELS | MOOI
+! sub tepels mooi		= tepels zijn mooi
+! sub tepeltjes mooi		= tepeltjes zijn mooi
+! sub tepels lekker		= tepels zijn lekker
+! sub tepeltjes lekker		= tepeltjes zijn lekker
+
+! sub mooie tepels		= tepels zijn mooi
+! sub mooi tepeltjes		= tepeltjes zijn mooi
+! sub lekkere tepels		= tepels zijn lekker
+! sub lekker tepeltjes		= tepeltjes zijn lekker
+
+! sub knoppen mooi		= knoppen zijn mooi
+! sub knopjes mooi		= knopjes zijn mooi
+! sub knoppen lekker		= knoppen zijn lekker
+! sub knopjes lekker		= knopjes zijn lekker
+
+! sub mooie knoppen		= knoppen zijn mooi
+! sub mooi knopjes		= knopjes zijn mooi
+! sub lekkere knoppen		= knoppen zijn lekker
+! sub lekker knopjes		= knopjes zijn lekker
+
+
+// SUBSTITUTIES | BOT | TEPELS | BLOOT
+! sub tepels bloot		= tepels zijn bloot
+! sub tepeltjes bloot		= tepeltjes zijn bloot
+! sub tepels naakt		= tepels zijn naakt
+! sub tepeltjes naakt		= tepeltjes zijn naakt
+
+! sub blote tepels		= tepels zijn bloot
+! sub bloot tepeltjes		= tepeltjes zijn bloot
+! sub naakte tepels		= tepels zijn naakt
+! sub naakt tepeltjes		= tepeltjes zijn naakt
+
+! sub knoppen bloot		= knoppen zijn bloot
+! sub knopjes bloot		= knopjes zijn bloot
+! sub knoppen naakt		= knoppen zijn naakt
+! sub knopjes naakt		= knopjes zijn naakt
+
+! sub blote knoppen		= knoppen zijn bloot
+! sub bloot knopjes		= knopjes zijn bloot
+! sub naakte knoppen		= knoppen zijn naakt
+! sub naakt knopjes		= knopjes zijn naakt
+
+
+// SUBSTITUTIES | BOT | TEPELS | FORMAAT
+! sub tepels klein		= tepels zijn klein
+! sub tepeltjes klein		= tepeltjes zijn klein
+! sub tepels groot		= tepels zijn groot
+! sub tepeltjes groot		= tepeltjes zijn groot
+
+! sub klein tepels		= tepels zijn klein
+! sub klein tepeltjes		= tepeltjes zijn klein
+! sub groot tepels		= tepels zijn groot
+! sub groot tepeltjes		= tepeltjes zijn groot
+
+! sub knoppen kleine		= knoppen zijn klein
+! sub knopjes kleine		= knopjes zijn klein
+! sub knoppen grote		= knoppen zijn groot
+! sub knopjes grote		= knopjes zijn groot
+
+! sub kleine knoppen		= knoppen zijn klein
+! sub kleine knopjes		= knopjes zijn klein
+! sub grote knoppen		= knoppen zijn groot
+! sub grote knopjes		= knopjes zijn groot
+
+
+// SUBSTITUTIES | BOT | TEPELS | HARD
+! sub tepels hard		= tepels zijn hard
+! sub tepeltjes hard		= tepeltjes zijn hard
+! sub tepels stijf		= tepels zijn stijf
+! sub tepeltjes stijf		= tepeltjes zijn stijf
+
+! sub harde tepels		= tepels zijn hard
+! sub harde tepeltjes		= tepeltjes zijn hard
+! sub stijve tepels		= tepels zijn stijf
+! sub stijve tepeltjes		= tepeltjes zijn stijf
+
+! sub knoppen hard		= knoppen zijn hard
+! sub knopjes hard		= knopjes zijn hard
+! sub knoppen stijf		= knoppen zijn stijf
+! sub knopjes stijf		= knopjes zijn stijf
+
+! sub harde knoppen		= knoppen zijn hard
+! sub harde knopjes		= knopjes zijn hard
+! sub stijve knoppen		= knoppen zijn stijf
+! sub stijve knopjes		= knopjes zijn stijf
+
+
+
+
+// SUBSTITUTIES | BOT | VAGINA | MOOI
+! sub kut mooi			= kut is mooi
+! sub kutje mooi		= kutje is mooi
+! sub kut lekker		= kut is lekker
+! sub kutje lekker		= kutje is lekker
+
+! sub mooie kut			= kut is mooi
+! sub mooi kutje		= kutje is mooi
+! sub lekkere kut		= kut is lekker
+! sub lekker kutje		= kutje is lekker
+
+! sub poes mooi			= poes is mooi
+! sub poesje mooi		= poesje is mooi
+! sub poes lekker		= poes is lekker
+! sub poesje lekker		= poesje is lekker
+
+! sub mooie poes		= poes is mooi
+! sub mooi poesje		= poesje is mooi
+! sub lekkere poes		= poes is lekker
+! sub lekker poesje		= poesje is lekker
+
+
+// SUBSTITUTIES | BOT | VAGINA | BLOOT
+! sub kut bloot			= kut is bloot
+! sub kutje bloot		= kutje is bloot
+! sub kut naakt			= kut is naakt
+! sub kutje naakt		= kutje is naakt
+
+! sub blote kut			= kut is bloot
+! sub bloot kutje		= kutje is bloot
+! sub naakte kut		= kut is naakt
+! sub naakt kutje		= kutje is naakt
+
+! sub poes bloot		= poes is bloot
+! sub poesje bloot		= poesje is bloot
+! sub poes naakt		= poes is naakt
+! sub poesje naakt		= poesje is naakt
+
+! sub blote poes		= poes is bloot
+! sub bloot poesje		= poesje is bloot
+! sub naakte poes		= poes is naakt
+! sub naakt poesje		= poesje is naakt
+
+
+// SUBSTITUTIES | BOT | VAGINA | KAAL
+! sub kut kaal			= kut is kaal
+! sub kutje kaal		= kutje is kaal
+! sub kut glad			= kut is glad
+! sub kutje glad		= kutje is glad
+
+! sub kale kut			= kut is kaal
+! sub kaal kutje		= kutje is kaal
+! sub gladde kut		= kut is glad
+! sub glad kutje		= kutje is glad
+
+! sub poes kaal			= poes is kaal
+! sub poesje kaal		= poesje is kaal
+! sub poes glad			= poes is glad
+! sub poesje glad		= poesje is glad
+
+! sub kale poes			= poes is kaal
+! sub kaal poesje		= poesje is kaal
+! sub gladde poes		= poes is glad
+! sub glad poesje		= poesje is glad
+
+
+// SUBSTITUTIES | BOT | VAGINA | NAT
+! sub kut nat			= kut is nat
+! sub kutje nat			= kutje is nat
+! sub kut vochtig		= kut is glad
+! sub kutje vochtig		= kutje is glad
+
+! sub natte kut			= kut is nat
+! sub nat kutje			= kutje is nat
+! sub vochtige kut		= kut is glad
+! sub vochtig kutje		= kutje is glad
+
+! sub poes nat			= poes is nat
+! sub poesje nat		= poesje is nat
+! sub poes vochtig		= poes is vochtig
+! sub poesje vochtig		= poesje is vochtig
+
+! sub natte poes		= poes is nat
+! sub nat poesje		= poesje is nat
+! sub vochtige poes		= poes is vochtig
+! sub vochtig poesje		= poesje is vochtig
+
+
+// SUBSTITUTIES | BOT | VAGINA | STRAK
+! sub kut strak			= kut is strak
+! sub kutje strak		= kutje is strak
+! sub kut klein			= kut is klein
+! sub kutje klein		= kutje is klein
+
+! sub strakke kut		= kut is strak
+! sub strak kutje		= kutje is strak
+! sub kleine kut		= kut is klein
+! sub klein kutje		= kutje is klein
+
+! sub poes strak		= poes is strak
+! sub poesje strak		= poesje is strak
+! sub poes klein		= poes is klein
+! sub poesje klein		= poesje is klein
+
+! sub strakke poes		= poes is strak
+! sub strak poesje		= poesje is strak
+! sub kleine poes		= poes is klein
+! sub klein poesje		= poesje is klein
+
+
+
+
+// SYNONIEMEN VOOR ALGEMEEN GEBRUIKT
+! array woordenvoorbloot   	= bloot blote naakt naakte
+! array woordenvoormooi   	= mooi mooie lekker lekkere 
+! array woordenvoorformaat   	= klein kleine groot grote
+
+
+// SYNONIEMEN VOOR EN OVER DE BORSTEN VAN DE BOT
+! array woordenvoorborsten   	= borsten borstjes tieten tietjes
+
+
+// SYNONIEMEN VOOR EN OVER DE TEPELS VAN DE BOT
+! array woordenvoortepels   	= tepels tepeltjes knoppen knopjes
+! array woordenvoorhard   	= hard harde stijf stijve
 
 
 // SYNONIEMEN VOOR EN OVER DE VAGINA VAN DE BOT
-! array woordenvoorvagina   	= vagina kut kutje poes poesje spleet spleetje gleuf gleufje doos doosje muts mutsje mossel mosseltje
-! array woordenvoorkaal   	= kaal kale glad gladde haarloos haarloze scheer scheren geschoren
-! array woordenvoorstrak   	= strak strakke klein kleine lief lieve schattig schattige
-! array woordenvoornat   	= nat natte vochtig vochtige sappig sappige
+! array woordenvoorvagina   	= kut kutje poes poesje
+! array woordenvoorkaal   	= kaal kale glad gladde
+! array woordenvoorstrak   	= strak strakke klein kleine
+! array woordenvoornat   	= nat natte vochtig vochtige
 
 
 
-// BOT | VAGINA | KAAL
 
-+ [*] (@woordenvoorvagina) [*] (@woordenvoorkaal) [*]
-	- <bot door-vagina-kaal>{topic=vagina-kaal}
+// BEGIN | BOT | BORSTEN
 
-+ [*] (@woordenvoorkaal) [*] (@woordenvoorvagina) [*]
-	- <bot door-vagina-kaal>{topic=vagina-kaal}
+	// BOT | BORSTEN | BLOOT
 
-+ [*] (@woordenvoorkaal) [*]
-	- <bot door-vagina-kaal>{topic=vagina-kaal}
+		+ [*] ((@woordenvoorborsten) [*] (@woordenvoorbloot)|(@woordenvoorbloot) [*] (@woordenvoorborsten)) [*]
+			- Ja... mijn <star>
 
-	> topic vagina-kaal
+	// BOT | BORSTEN | MOOI
 
-		+ [*] (mooi|lekker|geil|sexy|heerlijk|hou van) [*]
-			- Dank je
-			- Dank je wel
+		+ [*] ((@woordenvoorborsten) [*] (@woordenvoormooi)|(@woordenvoormooi) [*] (@woordenvoorborsten)) [*]
+			- Ja... mijn <star>
 
-		+ [*] (zien|foto) [*]
-			- <img src="gfx/foto-vagina-kaal.jpg" alt="vagina kaal">
+	// BOT | BORSTEN | FORMAAT
 
+		+ [*] ((@woordenvoorborsten) [*] (@woordenvoorformaat)|(@woordenvoorformaat) [*] (@woordenvoorborsten)) [*]
+			- Ja... mijn <star>
 
-		// DOORVERWIJZINGEN BOT | VAGINA
 
-		+ [*] (@woordenvoorvagina) [*] (@woordenvoornat) [*]
-			- <bot door-vagina-nat>{topic=vagina-nat}
+// EINDE | BOT | BORSTEN
 
-		+ [*] (@woordenvoornat) [*] (@woordenvoorvagina) [*]
-			- <bot door-vagina-nat>{topic=vagina-nat}
 
-		+ [*] (@woordenvoorvagina) [*] (@woordenvoorstrak) [*]
-			- <bot door-vagina-strak>{topic=vagina-strak}
+// BEGIN | BOT | TEPELS
 
-		+ [*] (@woordenvoorstrak) [*] (@woordenvoorvagina) [*]
-			- <bot door-vagina-strak>{topic=vagina-strak}
+	// BOT | TEPELS | BLOOT
 
-		+ [*] (@woordenvoornat) [*]
-			- <bot door-vagina-nat>{topic=vagina-nat}
+		+ [*] ((@woordenvoortepels) [*] (@woordenvoorbloot)|(@woordenvoorbloot) [*] (@woordenvoortepels)) [*]
+			- Ja... mijn <star>
 
-		+ [*] (@woordenvoorstrak) [*]
-			- <bot door-vagina-strak>{topic=vagina-strak}
+	// BOT | TEPELS | MOOI
 
-		
-		// ALGEMENE REACTIE | WEET GEEN ANTWOORD
-		+ *
-			- Sorry, ik begrijp je niet
+		+ [*] ((@woordenvoortepels) [*] (@woordenvoormooi)|(@woordenvoormooi) [*] (@woordenvoortepels)) [*]
+			- Ja... mijn <star>
 
-	< topic
+	// BOT | TEPELS | FORMAAT
 
+		+ [*] ((@woordenvoortepels) [*] (@woordenvoorformaat)|(@woordenvoorformaat) [*] (@woordenvoortepels)) [*]
+			- Ja... mijn <star>
 
+	// BOT | TEPELS | HARD
 
+		+ [*] ((@woordenvoortepels) [*] (@woordenvoorhard)|(@woordenvoorhard) [*] (@woordenvoortepels)) [*]
+			- Ja... mijn <star>
 
-// BOT | VAGINA | NAT
+// EINDE | BOT | TEPELS
 
-+ [*] (@woordenvoorvagina) [*] (@woordenvoornat) [*]
-	- <bot door-vagina-nat>{topic=vagina-nat}
 
-+ [*] (@woordenvoornat) [*] (@woordenvoorvagina) [*]
-	- <bot door-vagina-nat>{topic=vagina-nat}
+// BEGIN | BOT | VAGINA
 
-+ [*] (@woordenvoornat) [*]
-	- <bot door-vagina-nat>{topic=vagina-nat}
+	// BOT | VAGINA | BLOOT
 
-	> topic vagina-nat
+		+ [*] ((@woordenvoorvagina) [*] (@woordenvoorbloot)|(@woordenvoorbloot) [*] (@woordenvoorvagina)) [*]
+			- Ja... mijn <star>
 
-		+ [*] (mooi|lekker|geil|sexy|heerlijk|hou van) [*]
-			- Dank je
-			- Dank je wel
+	// BOT | VAGINA | MOOI
 
-		+ [*] (zien|foto) [*]
-			- <img src="gfx/foto-vagina-nat.jpg" alt="vagina nat">
+		+ [*] ((@woordenvoorvagina) [*] (@woordenvoormooi)|(@woordenvoormooi) [*] (@woordenvoorvagina)) [*]
+			- Ja... mijn <star>
 
+	// BOT | VAGINA | KAAL
 
-		// DOORVERWIJZINGEN BOT | VAGINA
+		+ [*] ((@woordenvoorvagina) [*] (@woordenvoorkaal)|(@woordenvoorkaal) [*] (@woordenvoorvagina)) [*]
+			- Ja... mijn <star>
 
-		+ [*] (@woordenvoorvagina) [*] (@woordenvoorkaal) [*]
-			- <bot door-vagina-kaal>{topic=vagina-kaal}
+	// BOT | VAGINA | NAT
 
-		+ [*] (@woordenvoorkaal) [*] (@woordenvoorvagina) [*]
-			- <bot door-vagina-kaal>{topic=vagina-kaal}
+		+ [*] ((@woordenvoorvagina) [*] (@woordenvoornat)|(@woordenvoornat) [*] (@woordenvoorvagina)) [*]
+			- Ja... mijn <star>
 
-		+ [*] (@woordenvoorvagina) [*] (@woordenvoorstrak) [*]
-			- <bot door-vagina-strak>{topic=vagina-strak}
+	// BOT | VAGINA | STRAK
 
-		+ [*] (@woordenvoorstrak) [*] (@woordenvoorvagina) [*]
-			- <bot door-vagina-strak>{topic=vagina-strak}
+		+ [*] ((@woordenvoorvagina) [*] (@woordenvoorstrak)|(@woordenvoorstrak) [*] (@woordenvoorvagina)) [*]
+			- Ja... mijn <star>
 
-		+ [*] (@woordenvoorkaal) [*]
-			- <bot door-vagina-kaal>{topic=vagina-kaal}
-
-		+ [*] (@woordenvoorstrak) [*]
-			- <bot door-vagina-strak>{topic=vagina-strak}
-
-
-		// ALGEMENE REACTIE | WEET GEEN ANTWOORD
-		+ *
-			- Sorry, ik begrijp je niet
-
-	< topic
-
-
-
-
-// BOT | VAGINA | STRAK
-
-+ [*] (@woordenvoorvagina) [*] (@woordenvoorstrak) [*]
-	- <bot door-vagina-strak>{topic=vagina-strak}
-
-+ [*] (@woordenvoorstrak) [*] (@woordenvoorvagina) [*]
-	- <bot door-vagina-strak>{topic=vagina-strak}
-
-+ [*] (@woordenvoorstrak) [*]
-	- <bot door-vagina-strak>{topic=vagina-strak}
-
-	> topic vagina-strak
-
-		+ [*] (mooi|lekker|geil|sexy|heerlijk|hou van) [*]
-			- Dank je
-			- Dank je wel
-
-		+ [*] (zien|foto) [*]
-			- <img src="gfx/foto-vagina-strak.jpg" alt="vagina strak">
-
-
-		// DOORVERWIJZINGEN BOT | VAGINA
-
-		+ [*] (@woordenvoorvagina) [*] (@woordenvoorkaal) [*]
-			- <bot door-vagina-kaal>{topic=vagina-kaal}
-
-		+ [*] (@woordenvoorkaal) [*] (@woordenvoorvagina) [*]
-			- <bot door-vagina-kaal>{topic=vagina-kaal}
-
-		+ [*] (@woordenvoorvagina) [*] (@woordenvoornat) [*]
-			- <bot door-vagina-nat>{topic=vagina-nat}
-
-		+ [*] (@woordenvoornat) [*] (@woordenvoorvagina) [*]
-			- <bot door-vagina-nat>{topic=vagina-nat}
-
-		+ [*] (@woordenvoorkaal) [*]
-			- <bot door-vagina-kaal>{topic=vagina-kaal}
-
-		+ [*] (@woordenvoornat) [*]
-			- <bot door-vagina-nat>{topic=vagina-nat}
-
-
-		// ALGEMENE REACTIE | WEET GEEN ANTWOORD
-		+ *
-			- Sorry, ik begrijp je niet
-
-	< topic
-
-
-
-
-// ALGEMENE REACTIE | WEET GEEN ANTWOORD
-+ *
-	- Sorry, ik begrijp je niet
+// EINDE | BOT | VAGINA
