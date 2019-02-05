@@ -104,6 +104,15 @@
 		+ [*] ((@woordenvoorbloot) [*] (@woordenvoorvagina)) [*]
 			- Ja... ik heb een bloot kutje
 
+		+ (@woordenvooradoratie) [*] ((@woordenvoorvagina) [*] (@woordenvoorbloot)) [*]
+			- Ik vind het fijn als mijn kutje bloot is
+		+ (@woordenvooradoratie) [*] ((@woordenvoorbloot) [*] (@woordenvoorvagina)) [*]
+			- Ik vind mijn blote kutje ook lekker
+		+ ((@woordenvoorvagina) [*] (@woordenvoorbloot)) [*] (@woordenvooradoratie) [*] 
+			- Ik vind het fijn als mijn kutje bloot is
+		+ ((@woordenvoorbloot) [*] (@woordenvoorvagina)) [*] (@woordenvooradoratie) [*] 
+			- Ik vind mijn blote kutje ook lekker
+
 	// BOT | VAGINA | KAAL
 
 		+ [*] ((@woordenvoorvagina) [*] (@woordenvoorkaal)) [*]
@@ -143,10 +152,28 @@
 		+ [*] ((@woordenvoorgroot) [*] (@woordenvoorvagina)) [*]
 			- Nee ik heb een  klein kutje
 
+		+ (@woordenvooradoratie) [*] ((@woordenvoorvagina) [*] (@woordenvoorgroot)) [*]
+			- Ik ben ook blij dat mijn kutje lekker klein is
+		+ (@woordenvooradoratie) [*] ((@woordenvoorgroot) [*] (@woordenvoorvagina)) [*]
+			- Ik ben ook blij met mijn kleine kutje
+		+ ((@woordenvoorvagina) [*] (@woordenvoorgroot)) [*] (@woordenvooradoratie) [*] 
+			- Ik ben ook blij dat mijn kutje lekker klein is
+		+ ((@woordenvoorgroot) [*] (@woordenvoorvagina)) [*] (@woordenvooradoratie) [*] 
+			- Ik ben ook blij met mijn kleine kutje
+
 		+ [*] ((@woordenvoorvagina) [*] (@woordenvoorklein)) [*]
 			- Ja... mijn kutje is klein
 		+ [*] ((@woordenvoorklein) [*] (@woordenvoorvagina)) [*]
 			- Ja... ik heb een klein kutje
+
+		+ (@woordenvooradoratie) [*] ((@woordenvoorvagina) [*] (@woordenvoorklein)) [*]
+			- Ik ben ook blij dat mijn kutje lekker klein is
+		+ (@woordenvooradoratie) [*] ((@woordenvoorklein) [*] (@woordenvoorvagina)) [*]
+			- Ik ben ook blij met mijn kleine kutje
+		+ ((@woordenvoorvagina) [*] (@woordenvoorklein)) [*] (@woordenvooradoratie) [*] 
+			- Ik ben ook blij dat mijn kutje lekker klein is
+		+ ((@woordenvoorklein) [*] (@woordenvoorvagina)) [*] (@woordenvooradoratie) [*] 
+			- Ik ben ook blij met mijn kleine kutje
 
 	// BOT | VAGINA | STRAK
 
@@ -154,6 +181,15 @@
 			- Ja... mijn kutje is strak
 		+ [*] ((@woordenvoorstrak) [*] (@woordenvoorvagina)) [*]
 			- Ja... ik heb een strak kutje
+
+		+ (@woordenvooradoratie) [*] ((@woordenvoorvagina) [*] (@woordenvoorstrak)) [*]
+			- Ik vind het ook lekker dat mijn kutje lekker strak is
+		+ (@woordenvooradoratie) [*] ((@woordenvoorstrak) [*] (@woordenvoorvagina)) [*]
+			- Ik vind mijn strakke kutje ook lekker
+		+ ((@woordenvoorvagina) [*] (@woordenvoorstrak)) [*] (@woordenvooradoratie) [*] 
+			- Ik vind het ook lekker dat mijn kutje lekker strak is
+		+ ((@woordenvoorstrak) [*] (@woordenvoorvagina)) [*] (@woordenvooradoratie) [*] 
+			- Ik vind mijn strakke kutje ook lekker
 
 // EINDE | BOT | VAGINA
 
