@@ -127,6 +127,15 @@
 		+ [*] ((@woordenvoornat) [*] (@woordenvoorvagina)) [*]
 			- Ja... ik heb een kaal kutje
 
+		+ (@woordenvooradoratie) [*] ((@woordenvoorvagina) [*] (@woordenvoornat)) [*]
+			- Ik vind het ook lekker als mijn kutje nat is
+		+ (@woordenvooradoratie) [*] ((@woordenvoornat) [*] (@woordenvoorvagina)) [*]
+			- Ik vind mijn natte kutje ook lekker
+		+ ((@woordenvoorvagina) [*] (@woordenvoornat)) [*] (@woordenvooradoratie) [*] 
+			- Ik vind het ook lekker als mijn kutje nat is
+		+ ((@woordenvoornat) [*] (@woordenvoorvagina)) [*] (@woordenvooradoratie) [*] 
+			- Ik vind mijn natte kutje ook lekker
+
 	// BOT | VAGINA | FORMAAT
 
 		+ [*] ((@woordenvoorvagina) [*] (@woordenvoorgroot)) [*]
