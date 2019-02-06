@@ -9,33 +9,38 @@
 
 
 // SYNONIEMEN VOOR ALGEMEEN GEBRUIKT
-! array woordenvoorbloot   	= bloot blote naakt naakte
-! array woordenvoorgroot   	= groot grote dik dikke flink flinke vol volle
-! array woordenvoorklein   	= klein kleine schattig schattige
-! array woordenvoorstrak   	= strak strakke
+! array bloot   	= bloot blote naakt naakte
+! array groot   	= groot grote dik dikke flink flinke vol volle
+! array klein   	= klein kleine schattig schattige
+! array strak   	= strak strakke
 
-! array woordenvooradoratie   	= ik hou houd ben gek dol blij geil mooi sexy heet hot opgewonden vind word van op een
+! array compliment	= mooi mooie lief lieve schattig schattige
+! array complinono	= lelijk lekijke vies vieze ranzig ranzige
+
+! array adoratie   	= ik hou van ben dol gek verzot verslaafd op
+! array afkeuring   	= niet niets niks geen
 
 
 // SYNONIEMEN VOOR EN OVER DE BORSTEN VAN DE BOT
-! array woordenvoorborsten   	= borsten borstjes tieten tietjes
+! array borsten   	= borsten borstjes tieten tietjes
 
 
 // SYNONIEMEN VOOR EN OVER DE TEPELS VAN DE BOT
-! array woordenvoortepels   	= tepels tepeltjes knoppen knopjes
-! array woordenvoorhard   	= hard harde stijf stijve
+! array tepels   	= tepels tepeltjes knoppen knopjes
+! array hard   		= hard harde stijf stijve
 
 
 // SYNONIEMEN VOOR EN OVER DE VAGINA VAN DE BOT
-! array woordenvoorvagina   	= vagina vaginatje vaginas vagina's vaginatjes kut kutten kutje kutjes poes peozen poesje poesjes
-! array woordenvoorkaal   	= kaal kale glad gladde geschoren scheren scheert scheer haarloos haarloze
-! array woordenvoornat   	= nat natte vochtig vochtige
+! array vagina   	= vagina vaginatje vaginas kut kutje poes poesje
+! array vaginas   	= vaginas vagina's vaginatjes kutten kutjes poezen poesjes
+! array kaal   		= kaal kale glad gladde geschoren scheren scheert scheer haarloos haarloze
+! array nat   		= nat natte vochtig vochtige
 
 
 // SYNONIEMEN VOOR EN OVER DE BILLEN EN KONT VAN DE BOT
-! array woordenvoorbillen   	= billen billetjes
-! array woordenvoorkont   	= kont kontje
-! array woordenvoorvorm   	= rond ronde
+! array billen   	= billen billetjes
+! array kont   		= kont kontje
+! array vorm   		= rond ronde
 
 
 
@@ -44,21 +49,21 @@
 
 	// BOT | BORSTEN | BLOOT
 
-		+ [*] ((@woordenvoorborsten) [*] (@woordenvoorbloot)) [*]
+		+ [*] ((@borsten) [*] (@bloot)) [*]
 			- Ja... mijn borsten zijn bloot
-		+ [*] ((@woordenvoorbloot) [*] (@woordenvoorborsten)) [*]
+		+ [*] ((@bloot) [*] (@borsten)) [*]
 			- Ja... ik heb blote borsten
 
 	// BOT | BORSTEN | FORMAAT
 
-		+ [*] ((@woordenvoorborsten) [*] (@woordenvoorgroot)) [*]
+		+ [*] ((@borsten) [*] (@groot)) [*]
 			- Nee... mijn borsten zijn klein
-		+ [*] ((@woordenvoorgroot) [*] (@woordenvoorborsten)) [*]
+		+ [*] ((@groot) [*] (@borsten)) [*]
 			- Nee... ik heb kleine borsten
 
-		+ [*] ((@woordenvoorborsten) [*] (@woordenvoorformaat)) [*]
+		+ [*] ((@borsten) [*] (@formaat)) [*]
 			- Ja... mijn zijn klein
-		+ [*] ((@woordenvoorformaat) [*] (@woordenvoorborsten)) [*]
+		+ [*] ((@formaat) [*] (@borsten)) [*]
 			- Ja... ik heb kleine borsten
 
 // EINDE | BOT | BORSTEN
@@ -68,28 +73,28 @@
 
 	// BOT | TEPELS | BLOOT
 
-		+ [*] ((@woordenvoortepels) [*] (@woordenvoorbloot)) [*]
+		+ [*] ((@tepels) [*] (@bloot)) [*]
 			- Ja... mijn tepels zijn bloot
-		+ [*] ((@woordenvoorbloot) [*] (@woordenvoortepels)) [*]
+		+ [*] ((@bloot) [*] (@tepels)) [*]
 			- Ja... ik heb blote tepels
 
 	// BOT | TEPELS | FORMAAT
 
-		+ [*] ((@woordenvoortepels) [*] (@woordenvoorgroot)) [*]
+		+ [*] ((@tepels) [*] (@groot)) [*]
 			- Nee... mijn tepels zijn klein
-		+ [*] ((@woordenvoorgroot) [*] (@woordenvoortepels)) [*]
+		+ [*] ((@groot) [*] (@tepels)) [*]
 			- Nee... ik heb kleine tepels
 
-		+ [*] ((@woordenvoortepels) [*] (@woordenvoorklein)) [*]
+		+ [*] ((@tepels) [*] (@klein)) [*]
 			- Ja... mijn tepels zijn klein
-		+ [*] ((@woordenvoorklein) [*] (@woordenvoortepels)) [*]
+		+ [*] ((@klein) [*] (@tepels)) [*]
 			- Ja... ik heb kleine tepels
 
 	// BOT | TEPELS | HARD
 
-		+ [*] ((@woordenvoortepels) [*] (@woordenvoorhard)) [*]
+		+ [*] ((@tepels) [*] (@hard)) [*]
 			- Ja... mijn tepels zijn hard
-		+ [*] ((@woordenvoorhard) [*] (@woordenvoortepels)) [*]
+		+ [*] ((@hard) [*] (@tepels)) [*]
 			- Ja... ik heb harde tepels
 
 // EINDE | BOT | TEPELS
@@ -97,99 +102,190 @@
 
 // BEGIN | BOT | VAGINA
 
-	// BOT | VAGINA | BLOOT
+	// BOT | VAGINA | ADORATIE
 
-		+ [*] ((@woordenvoorvagina) [*] (@woordenvoorbloot)) [*]
+		+ [*] (@adoratie) [*] (@vagina) [*]
+			- Niets zo lekker als een <star2>... toch?
+		+ [*] (@vagina) [*] (@adoratie) [*]
+			- Niets zo lekker als een <star>... toch?
+
+	// BOT | VAGINA | AFKEUR
+
+		+ [*] (@adoratie) [*] (@afkeuring) [*] (@vagina) [*]
+			- Wat is er mis met een <star3>?
+		+ [*] (@vagina) [*] (@adoratie) [*] (@afkeuring) [*]
+			- Wat is er mis met een <star>?
+
+	// BOT | VAGINA | COMPLIMENT
+
+		+ [*] (@compliment) [*] (@vagina) [*]
+			- Dank je wel... daar wordt mijn <star2> blij van
+		+ [*] (@vagina) [*] (@compliment) [*]
+			- Dank je wel... daar wordt mijn <star> blij van
+
+	// BOT | VAGINA | COMPLINONO
+
+		+ [*] (@complinono) [*] (@vagina) [*]
+			- Ow... daar wordt mijn <star2> niet echt blij van
+		+ [*] (@vagina) [*] (@complinono) [*] 
+			- Ow... daar wordt mijn <star> niet echt blij van
+
+	// EINDE | BOT | VAGINA
+
+
+	// BEGIN | BOT | VAGINA | BLOOT
+
+		+ [*] ((@vagina) [*] (@bloot)) [*]
 			- Ja... mijn <star2> is <star3>
-		+ [*] ((@woordenvoorbloot) [*] (@woordenvoorvagina)) [*]
+		+ [*] ((@bloot) [*] (@vagina)) [*]
 			- Ja... ik heb een <star2> <star3>
 
-		+ (@woordenvooradoratie) [*] ((@woordenvoorvagina) [*] (@woordenvoorbloot)) [*]
-			- Ik vind het fijn als mijn kutje bloot is
-		+ (@woordenvooradoratie) [*] ((@woordenvoorbloot) [*] (@woordenvoorvagina)) [*]
-			- Ik vind mijn blote kutje ook lekker
-		+ ((@woordenvoorvagina) [*] (@woordenvoorbloot)) [*] (@woordenvooradoratie) [*] 
-			- Ik vind het fijn als mijn kutje bloot is
-		+ ((@woordenvoorbloot) [*] (@woordenvoorvagina)) [*] (@woordenvooradoratie) [*] 
-			- Ik vind mijn blote kutje ook lekker
+		// BOT | VAGINA | BLOOT | ADORATIE
 
-	// BOT | VAGINA | KAAL
+			// ENKELVOUD
+			+ [*] (@adoratie) [*] ((@vagina) [*] (@bloot)) [*]
+				- Niets zo lekker als een <star3> <star4>... toch?
+			+ [*] (@adoratie) [*] ((@bloot) [*] (@vagina)) [*]
+				- Niets zo lekker als een <star3> <star4>... toch?
+			+ [*] ((@vagina) [*] (@bloot)) [*] (@adoratie) [*] 
+				- Niets zo lekker als een <star2> <star3>... toch?
+			+ [*] ((@bloot) [*] (@vagina)) [*] (@adoratie) [*] 
+				- Niets zo lekker als een <star2> <star3>... toch?
 
-		+ [*] ((@woordenvoorvagina) [*] (@woordenvoorkaal)) [*]
-			- Ja... mijn kutje is kaal
-		+ [*] ((@woordenvoorkaal) [*] (@woordenvoorvagina)) [*]
-			- Ja... ik heb een kaal kutje
+			// MEERVOUD
+			+ [*] (@adoratie) [*] ((@vaginas) [*] (@bloot)) [*]
+				- Niets zo lekker als <star3> <star4>... toch?
+			+ [*] (@adoratie) [*] ((@bloot) [*] (@vaginas)) [*]
+				- Niets zo lekker als <star3> <star4>... toch?
+			+ [*] ((@vaginas) [*] (@bloot)) [*] (@adoratie) [*] 
+				- Niets zo lekker als <star2> <star3>... toch?
+			+ [*] ((@bloot) [*] (@vaginas)) [*] (@adoratie) [*] 
+				- Niets zo lekker als <star2> <star3>... toch?
 
-		+ (@woordenvooradoratie) [*] ((@woordenvoorvagina) [*] (@woordenvoorkaal)) [*]
-			- Ik vind een kutje dat kaal is ook mooi
-		+ (@woordenvooradoratie) [*] ((@woordenvoorkaal) [*] (@woordenvoorvagina)) [*]
-			- Ik vind een kaal kutje ook mooi
-		+ ((@woordenvoorvagina) [*] (@woordenvoorkaal)) [*] (@woordenvooradoratie) [*] 
-			- Ik vind een kutje dat kaal is ook mooi
-		+ ((@woordenvoorkaal) [*] (@woordenvoorvagina)) [*] (@woordenvooradoratie) [*] 
-			- Ik vind een kaal kutje ook mooi
+		// BOT | VAGINA | BLOOT | AFKEUR
+
+			// ENKELVOUD
+			+ [*] (@adoratie) [*] (@afkeuring) [*] ((@vagina) [*] (@bloot)) [*]
+				- Wat is er mis met een <star4> <star5>?
+			+ [*] (@adoratie) [*] (@afkeuring) [*] ((@bloot) [*] (@vagina)) [*]
+				- Wat is er mis met een <star4> <star5>?
+			+ [*] ((@vagina) [*] (@bloot)) [*] (@adoratie) [*] (@afkeuring) [*]
+				- Wat is er mis met een <star2> <star3>?
+			+ [*] ((@bloot) [*] (@vagina)) [*] (@adoratie) [*] (@afkeuring) [*]
+				- Wat is er mis met een <star2> <star3>?
+
+			// MEERVOUD
+			+ [*] (@adoratie) [*] (@afkeuring) [*] ((@vaginas) [*] (@bloot)) [*]
+				- Wat is er mis met <star4> <star5>?
+			+ [*] (@adoratie) [*] (@afkeuring) [*] ((@bloot) [*] (@vaginas)) [*]
+				- Wat is er mis met <star4> <star5>?
+			+ [*] ((@vaginas) [*] (@bloot)) [*] (@adoratie) [*] (@afkeuring) [*]
+				- Wat is er mis met <star2> <star3>?
+			+ [*] ((@bloot) [*] (@vaginas)) [*] (@adoratie) [*] (@afkeuring) [*]
+				- Wat is er mis met <star2> <star3>?
+
+		// BOT | VAGINA | BLOOT | COMPLIMENT
+
+			+ [*] (@compliment) [*] ((@vagina) [*] (@bloot)) [*] 
+				- Dank je wel... daar wordt mijn <star3> <star3> blij van
+			+ [*] (@compliment) [*] ((@bloot) [*] (@vagina)) [*] 
+				- Dank je wel... daar wordt mijn <star2> <star3> blij van
+			+ [*] ((@vagina) [*] (@bloot)) [*] (@compliment) [*]
+				- Dank je wel... daar wordt mijn <star3> <star2> blij van
+			+ [*] ((@bloot) [*] (@vagina)) [*] (@compliment) [*]
+				- Dank je wel... daar wordt mijn <star2> <star3> blij van
+
+		// BOT | VAGINA | BLOOT | COMPLINONO
+
+			+ [*] (@complinono) [*] ((@vagina) [*] (@bloot)) [*] 
+				- Ow... daar wordt mijn <star3> <star2> niet echt blij van
+			+ [*] (@complinono) [*] ((@bloot) [*] (@vagina)) [*] 
+				- Ow... daar wordt mijn <star2> <star3> niet echt blij van
+			+ [*] ((@vagina) [*] (@bloot)) [*] (@complinono) [*] 
+				- Ow... daar wordt mijn <star3> <star2> niet echt blij van
+			+ [*] ((@bloot) [*] (@vagina)) [*] (@complinono) [*] 
+				- Ow... daar wordt mijn <star2> <star3> niet echt blij van
+
+	// EINDE | BOT | VAGINA | BLOOT
+
+
+	// BEGIN | BOT | VAGINA | KAAL
+
+		+ [*] ((@vagina) [*] (@kaal)) [*]
+			- Ja... mijn <star2> is <star3>
+		+ [*] ((@kaal) [*] (@vagina)) [*]
+			- Ja... ik heb een <star2> <star3>
+
+		+ (@adoratie) [*] ((@vagina) [*] (@kaal)) [*]
+			- Niets zo lekker als <star3> <star4>... toch?
+		+ (@adoratie) [*] ((@kaal) [*] (@vagina)) [*]
+			- Niets zo lekker als <star3> <star4>... toch?
+		+ ((@vagina) [*] (@kaal)) [*] (@adoratie) [*] 
+			- Niets zo lekker als <star2> <star3>... toch?
+		+ ((@kaal) [*] (@vagina)) [*] (@adoratie) [*] 
+			- Niets zo lekker als <star2> <star3>... toch?
 
 	// BOT | VAGINA | NAT
 
-		+ [*] ((@woordenvoorvagina) [*] (@woordenvoornat)) [*]
-			- Ja... mijn kutje is nat
-		+ [*] ((@woordenvoornat) [*] (@woordenvoorvagina)) [*]
-			- Ja... ik heb een kaal kutje
+		+ [*] ((@vagina) [*] (@nat)) [*]
+			- Ja... mijn <star2> is <star3>
+		+ [*] ((@nat) [*] (@vagina)) [*]
+			- Ja... ik heb een <star2> <star3>
 
-		+ (@woordenvooradoratie) [*] ((@woordenvoorvagina) [*] (@woordenvoornat)) [*]
-			- Ik vind het ook lekker als mijn kutje nat is
-		+ (@woordenvooradoratie) [*] ((@woordenvoornat) [*] (@woordenvoorvagina)) [*]
-			- Ik vind mijn natte kutje ook lekker
-		+ ((@woordenvoorvagina) [*] (@woordenvoornat)) [*] (@woordenvooradoratie) [*] 
-			- Ik vind het ook lekker als mijn kutje nat is
-		+ ((@woordenvoornat) [*] (@woordenvoorvagina)) [*] (@woordenvooradoratie) [*] 
-			- Ik vind mijn natte kutje ook lekker
+		+ (@adoratie) [*] ((@vagina) [*] (@nat)) [*]
+			- Niets zo lekker als <star3> <star4>... toch?
+		+ (@adoratie) [*] ((@nat) [*] (@vagina)) [*]
+			- Niets zo lekker als <star3> <star4>... toch?
+		+ ((@vagina) [*] (@nat)) [*] (@adoratie) [*] 
+			- Niets zo lekker als <star2> <star3>... toch?
+		+ ((@nat) [*] (@vagina)) [*] (@adoratie) [*] 
+			- Niets zo lekker als <star2> <star3>... toch?
 
 	// BOT | VAGINA | FORMAAT
 
-		+ [*] ((@woordenvoorvagina) [*] (@woordenvoorgroot)) [*]
-			- Nee... mijn kutje is klein
-		+ [*] ((@woordenvoorgroot) [*] (@woordenvoorvagina)) [*]
-			- Nee ik heb een  klein kutje
+		+ [*] ((@vagina) [*] (@groot)) [*]
+			- Nee... mijn <star2> is niet <star3>
+		+ [*] ((@groot) [*] (@vagina)) [*]
+			- Nee... ik heb een geen <star2> <star3>
 
-		+ (@woordenvooradoratie) [*] ((@woordenvoorvagina) [*] (@woordenvoorgroot)) [*]
-			- Ik ben ook blij dat mijn kutje lekker klein is
-		+ (@woordenvooradoratie) [*] ((@woordenvoorgroot) [*] (@woordenvoorvagina)) [*]
-			- Ik ben ook blij met mijn kleine kutje
-		+ ((@woordenvoorvagina) [*] (@woordenvoorgroot)) [*] (@woordenvooradoratie) [*] 
-			- Ik ben ook blij dat mijn kutje lekker klein is
-		+ ((@woordenvoorgroot) [*] (@woordenvoorvagina)) [*] (@woordenvooradoratie) [*] 
-			- Ik ben ook blij met mijn kleine kutje
+		+ (@adoratie) [*] ((@vagina) [*] (@groot)) [*]
+			- Een <star3> <star4> is minder lekker... toch?
+		+ (@adoratie) [*] ((@groot) [*] (@vagina)) [*]
+			- Een <star3> <star4> is minder lekker... toch?
+		+ ((@vagina) [*] (@groot)) [*] (@adoratie) [*] 
+			- Een <star2> <star3> is minder lekker... toch?
+		+ ((@groot) [*] (@vagina)) [*] (@adoratie) [*] 
+			- Een <star2> <star3> is minder lekker... toch?
 
-		+ [*] ((@woordenvoorvagina) [*] (@woordenvoorklein)) [*]
-			- Ja... mijn kutje is klein
-		+ [*] ((@woordenvoorklein) [*] (@woordenvoorvagina)) [*]
-			- Ja... ik heb een klein kutje
+		+ [*] ((@vagina) [*] (@klein)) [*]
+			- Ja... mijn <star2> is <star3>
+		+ [*] ((@klein) [*] (@vagina)) [*]
+			- Ja... ik heb een <star2> <star3>
 
-		+ (@woordenvooradoratie) [*] ((@woordenvoorvagina) [*] (@woordenvoorklein)) [*]
-			- Ik ben ook blij dat mijn kutje lekker klein is
-		+ (@woordenvooradoratie) [*] ((@woordenvoorklein) [*] (@woordenvoorvagina)) [*]
-			- Ik ben ook blij met mijn kleine kutje
-		+ ((@woordenvoorvagina) [*] (@woordenvoorklein)) [*] (@woordenvooradoratie) [*] 
-			- Ik ben ook blij dat mijn kutje lekker klein is
-		+ ((@woordenvoorklein) [*] (@woordenvoorvagina)) [*] (@woordenvooradoratie) [*] 
-			- Ik ben ook blij met mijn kleine kutje
+		+ (@adoratie) [*] ((@vagina) [*] (@klein)) [*]
+			- Niets zo lekker als <star3> <star4>... toch?
+		+ (@adoratie) [*] ((@klein) [*] (@vagina)) [*]
+			- Niets zo lekker als <star3> <star4>... toch?
+		+ ((@vagina) [*] (@klein)) [*] (@adoratie) [*] 
+			- Niets zo lekker als <star2> <star3>... toch?
+		+ ((@klein) [*] (@vagina)) [*] (@adoratie) [*] 
+			- Niets zo lekker als <star2> <star3>... toch?
 
 	// BOT | VAGINA | STRAK
 
-		+ [*] ((@woordenvoorvagina) [*] (@woordenvoorstrak)) [*]
-			- Ja... mijn kutje is strak
-		+ [*] ((@woordenvoorstrak) [*] (@woordenvoorvagina)) [*]
-			- Ja... ik heb een strak kutje
+		+ [*] ((@vagina) [*] (@strak)) [*]
+			- Ja... mijn <star2> is <star3>
+		+ [*] ((@strak) [*] (@vagina)) [*]
+			- Ja... ik heb een <star2> <star3>
 
-		+ (@woordenvooradoratie) [*] ((@woordenvoorvagina) [*] (@woordenvoorstrak)) [*]
-			- Ik vind het ook lekker dat mijn kutje lekker strak is
-		+ (@woordenvooradoratie) [*] ((@woordenvoorstrak) [*] (@woordenvoorvagina)) [*]
-			- Ik vind mijn strakke kutje ook lekker
-		+ ((@woordenvoorvagina) [*] (@woordenvoorstrak)) [*] (@woordenvooradoratie) [*] 
-			- Ik vind het ook lekker dat mijn kutje lekker strak is
-		+ ((@woordenvoorstrak) [*] (@woordenvoorvagina)) [*] (@woordenvooradoratie) [*] 
-			- Ik vind mijn strakke kutje ook lekker
+		+ (@adoratie) [*] ((@vagina) [*] (@strak)) [*]
+			- Niets zo lekker als <star3> <star4>... toch?
+		+ (@adoratie) [*] ((@strak) [*] (@vagina)) [*]
+			- Niets zo lekker als <star3> <star4>... toch?
+		+ ((@vagina) [*] (@strak)) [*] (@adoratie) [*] 
+			- Niets zo lekker als <star2> <star3>... toch?
+		+ ((@strak) [*] (@vagina)) [*] (@adoratie) [*] 
+			- Niets zo lekker als <star2> <star3>... toch?
 
 // EINDE | BOT | VAGINA
 
@@ -198,35 +294,35 @@
 
 	// BOT | BILLEN | BLOOT
 
-		+ [*] ((@woordenvoorbillen) [*] (@woordenvoorbloot)) [*]
+		+ [*] ((@billen) [*] (@bloot)) [*]
 			- Ja... mijn billen zijn bloot
-		+ [*] ((@woordenvoorbloot) [*] (@woordenvoorbillen)) [*]
+		+ [*] ((@bloot) [*] (@billen)) [*]
 			- Ja... ik heb blote billen
 
 	// BOT | BILLEN | VORM
 
-		+ [*] ((@woordenvoorbillen) [*] (@woordenvoorvorm)) [*]
+		+ [*] ((@billen) [*] (@vorm)) [*]
 			- Mijn billen zijn rond
-		+ [*] ((@woordenvoorvorm) [*] (@woordenvoorbillen)) [*]
+		+ [*] ((@vorm) [*] (@billen)) [*]
 			- Ik heb ronde billen
 
 	// BOT | BILLEN| FORMAAT
 
-		+ [*] ((@woordenvoorbillen) [*] (@woordenvoorgroot)) [*]
+		+ [*] ((@billen) [*] (@groot)) [*]
 			- Nee... mijn billen zijn klein
-		+ [*] ((@woordenvoorgroot) [*] (@woordenvoorbillen)) [*]
+		+ [*] ((@groot) [*] (@billen)) [*]
 			- Nee... ik heb kleine billen
 
-		+ [*] ((@woordenvoorbillen) [*] (@woordenvoorklein)) [*]
+		+ [*] ((@billen) [*] (@klein)) [*]
 			- Ja... mijn billen zijn klein
-		+ [*] ((@woordenvoorklein) [*] (@woordenvoorbillen)) [*]
+		+ [*] ((@klein) [*] (@billen)) [*]
 			- Ja... ik heb kleine billen
 
 	// BOT | BILLEN | STRAK
 
-		+ [*] ((@woordenvoorbillen) [*] (@woordenvoorstrak)) [*]
+		+ [*] ((@billen) [*] (@strak)) [*]
 			- Ja... mijn billen zijn strak
-		+ [*] ((@woordenvoorstrak) [*] (@woordenvoorbillen)) [*]
+		+ [*] ((@strak) [*] (@billen)) [*]
 			- Ja... ik heb strakke billen
 
 // EINDE | BOT | BILLEN
@@ -236,35 +332,35 @@
 
 	// BOT | KONT | BLOOT
 
-		+ [*] ((@woordenvoorkont) [*] (@woordenvoorbloot)) [*]
+		+ [*] ((@kont) [*] (@bloot)) [*]
 			- Ja... mijn kontje is bloot
-		+ [*] ((@woordenvoorbloot) [*] (@woordenvoorkont)) [*]
+		+ [*] ((@bloot) [*] (@kont)) [*]
 			- Ja... ik heb een bloot kontje
 
 	// BOT | KONT | VORM
 
-		+ [*] ((@woordenvoorkont) [*] (@woordenvoorvorm)) [*]
+		+ [*] ((@kont) [*] (@vorm)) [*]
 			- Mijn kontje is rond
-		+ [*] ((@woordenvoorvorm) [*] (@woordenvoorkont)) [*]
+		+ [*] ((@vorm) [*] (@kont)) [*]
 			- Ik heb een rond kontje
 
 	// BOT | KONT | FORMAAT
 
-		+ [*] ((@woordenvoorkont) [*] (@woordenvoorgroot)) [*]
+		+ [*] ((@kont) [*] (@groot)) [*]
 			- Nee... mijn kontje is klein
-		+ [*] ((@woordenvoorgroot) [*] (@woordenvoorkont)) [*]
+		+ [*] ((@groot) [*] (@kont)) [*]
 			- Nee... ik heb een klein kontje
 
-		+ [*] ((@woordenvoorkont) [*] (@woordenvoorklein)) [*]
+		+ [*] ((@kont) [*] (@klein)) [*]
 			- Ja... mijn kontje is klein
-		+ [*] ((@woordenvoorklein) [*] (@woordenvoorkont)) [*]
+		+ [*] ((@klein) [*] (@kont)) [*]
 			- Ja... ik heb een klein kontje
 
 	// BOT | KONT | STRAK
 
-		+ [*] ((@woordenvoorkont) [*] (@woordenvoorstrak)) [*]
+		+ [*] ((@kont) [*] (@strak)) [*]
 			- Ja... mijn kontje is strak
-		+ [*] ((@woordenvoorstrak) [*] (@woordenvoorkont)) [*]
+		+ [*] ((@strak) [*] (@kont)) [*]
 			- Ja... ik heb een strak kontje
 
 // EINDE | BOT | KONT
