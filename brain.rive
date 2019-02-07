@@ -45,31 +45,243 @@
 
 
 
+// BEGIN | BOT | BORSTEN | TEPELS | VAGINA | BILLEN | KONT
+
 // BEGIN | BOT | BORSTEN
 
-	// BOT | BORSTEN | BLOOT
+	// BOT | BORSTEN | ADORATIE
+
+		+ [*] (@adoratie) [*] (@borsten) [*]
+			- Niets zo lekker als <star2>... toch?
+		+ [*] (@borsten) [*] (@adoratie) [*]
+			- Niets zo lekker als <star>... toch?
+
+	// BOT | BORSTEN | AFKEUR
+
+		+ [*] (@adoratie) [*] (@afkeuring) [*] (@borsten) [*]
+			- Wat is er mis met <star3>?
+		+ [*] (@borsten) [*] (@adoratie) [*] (@afkeuring) [*]
+			- Wat is er mis met <star>?
+
+	// BOT | BORSTEN | COMPLIMENT
+
+		+ [*] (@compliment) [*] (@borsten) [*]
+			- Dank je wel... daar worden mijn <star2> blij van
+		+ [*] (@borsten) [*] (@compliment) [*]
+			- Dank je wel... daar worden mijn <star> blij van
+
+	// BOT | BORSTEN | COMPLINONO
+
+		+ [*] (@complinono) [*] (@borsten) [*]
+			- Ow... daar worden mijn <star2> niet echt blij van
+		+ [*] (@borsten) [*] (@complinono) [*] 
+			- Ow... daar worden mijn <star> niet echt blij van
+
+	// EINDE | BOT | BORSTEN
+
+
+	// BEGIN | BOT | BORSTEN | BLOOT
 
 		+ [*] ((@borsten) [*] (@bloot)) [*]
 			- Ja... mijn borsten zijn bloot
 		+ [*] ((@bloot) [*] (@borsten)) [*]
 			- Ja... ik heb blote borsten
 
-	// BOT | BORSTEN | FORMAAT
+		// BOT | BORSTEN | BLOOT | ADORATIE
+
+			// MEERVOUD
+			+ [*] (@adoratie) [*] ((@borstens) [*] (@bloot)) [*]
+				- Niets zo lekker als <star3> <star4>... toch?
+			+ [*] (@adoratie) [*] ((@bloot) [*] (@borstens)) [*]
+				- Niets zo lekker als <star3> <star4>... toch?
+			+ [*] ((@borstens) [*] (@bloot)) [*] (@adoratie) [*] 
+				- Niets zo lekker als <star2> <star3>... toch?
+			+ [*] ((@bloot) [*] (@borstens)) [*] (@adoratie) [*] 
+				- Niets zo lekker als <star2> <star3>... toch?
+
+		// BOT | BORSTEN | BLOOT | AFKEUR
+
+			// MEERVOUD
+			+ [*] (@adoratie) [*] (@afkeuring) [*] ((@borstens) [*] (@bloot)) [*]
+				- Wat is er mis met <star4> <star5>?
+			+ [*] (@adoratie) [*] (@afkeuring) [*] ((@bloot) [*] (@borstens)) [*]
+				- Wat is er mis met <star4> <star5>?
+			+ [*] ((@borstens) [*] (@bloot)) [*] (@adoratie) [*] (@afkeuring) [*]
+				- Wat is er mis met <star2> <star3>?
+			+ [*] ((@bloot) [*] (@borstens)) [*] (@adoratie) [*] (@afkeuring) [*]
+				- Wat is er mis met <star2> <star3>?
+
+		// BOT | BORSTEN | BLOOT | COMPLIMENT
+
+			+ [*] (@compliment) [*] ((@borsten) [*] (@bloot)) [*] 
+				- Dank je wel... daar worden mijn <star3> <star3> blij van
+			+ [*] (@compliment) [*] ((@bloot) [*] (@borsten)) [*] 
+				- Dank je wel... daar worden mijn <star2> <star3> blij van
+			+ [*] ((@borsten) [*] (@bloot)) [*] (@compliment) [*]
+				- Dank je wel... daar worden mijn <star3> <star2> blij van
+			+ [*] ((@bloot) [*] (@borsten)) [*] (@compliment) [*]
+				- Dank je wel... daar worden mijn <star2> <star3> blij van
+
+		// BOT | BORSTEN | BLOOT | COMPLINONO
+
+			+ [*] (@complinono) [*] ((@borsten) [*] (@bloot)) [*] 
+				- Ow... daar worden mijn <star3> <star2> niet echt blij van
+			+ [*] (@complinono) [*] ((@bloot) [*] (@borsten)) [*] 
+				- Ow... daar worden mijn <star2> <star3> niet echt blij van
+			+ [*] ((@borsten) [*] (@bloot)) [*] (@complinono) [*] 
+				- Ow... daar worden mijn <star3> <star2> niet echt blij van
+			+ [*] ((@bloot) [*] (@borsten)) [*] (@complinono) [*] 
+				- Ow... daar wordeb mijn <star2> <star3> niet echt blij van
+
+	// EINDE | BOT | BORSTEN | BLOOT
+
+
+	// BEGIN | BOT | BORSTEN | FORMAAT | GROOT
 
 		+ [*] ((@borsten) [*] (@groot)) [*]
 			- Nee... mijn borsten zijn klein
 		+ [*] ((@groot) [*] (@borsten)) [*]
 			- Nee... ik heb kleine borsten
 
+		// BOT | BORSTEN | FORMAAT | GROOT | ADORATIE
+
+			// MEERVOUD
+			+ [*] (@adoratie) [*] ((@borstens) [*] (@groot)) [*]
+				- Niets zo lekker als <star3> <star4>... toch?
+			+ [*] (@adoratie) [*] ((@groot) [*] (@borstens)) [*]
+				- Niets zo lekker als <star3> <star4>... toch?
+			+ [*] ((@borstens) [*] (@groot)) [*] (@adoratie) [*] 
+				- Niets zo lekker als <star2> <star3>... toch?
+			+ [*] ((@groot) [*] (@borstens)) [*] (@adoratie) [*] 
+				- Niets zo lekker als <star2> <star3>... toch?
+
+		// BOT | BORSTEN | FORMAAT | GROOT | AFKEUR
+
+			// MEERVOUD
+			+ [*] (@adoratie) [*] (@afkeuring) [*] ((@borstens) [*] (@groot)) [*]
+				- Wat is er mis met <star4> <star5>?
+			+ [*] (@adoratie) [*] (@afkeuring) [*] ((@groot) [*] (@borstens)) [*]
+				- Wat is er mis met <star4> <star5>?
+			+ [*] ((@borstens) [*] (@groot)) [*] (@adoratie) [*] (@afkeuring) [*]
+				- Wat is er mis met <star2> <star3>?
+			+ [*] ((@groot) [*] (@borstens)) [*] (@adoratie) [*] (@afkeuring) [*]
+				- Wat is er mis met <star2> <star3>?
+
+		// BOT | BORSTEN | FORMAAT | GROOT | COMPLIMENT
+
+			+ [*] (@compliment) [*] ((@borsten) [*] (@groot)) [*] 
+				- Dank je wel... daar worden mijn <star3> <star3> blij van
+			+ [*] (@compliment) [*] ((@groot) [*] (@borsten)) [*] 
+				- Dank je wel... daar worden mijn <star2> <star3> blij van
+			+ [*] ((@borsten) [*] (@groot)) [*] (@compliment) [*]
+				- Dank je wel... daar worden mijn <star3> <star2> blij van
+			+ [*] ((@groot) [*] (@borsten)) [*] (@compliment) [*]
+				- Dank je wel... daar worden mijn <star2> <star3> blij van
+
+		// BOT | BORSTEN | FORMAAT | GROOT | COMPLINONO
+
+			+ [*] (@complinono) [*] ((@borsten) [*] (@groot)) [*] 
+				- Ow... daar worden mijn <star3> <star2> niet echt blij van
+			+ [*] (@complinono) [*] ((@groot) [*] (@borsten)) [*] 
+				- Ow... daar worden mijn <star2> <star3> niet echt blij van
+			+ [*] ((@borsten) [*] (@groot)) [*] (@complinono) [*] 
+				- Ow... daar worden mijn <star3> <star2> niet echt blij van
+			+ [*] ((@groot) [*] (@borsten)) [*] (@complinono) [*] 
+				- Ow... daar worden mijn <star2> <star3> niet echt blij van
+
+	// EINDE | BOT | BORSTEN | FORMAAT | GROOT
+
+
+	// BEGIN | BOT | BORSTEN | FORMAAT | KLEIN
+
 		+ [*] ((@borsten) [*] (@formaat)) [*]
 			- Ja... mijn zijn klein
 		+ [*] ((@formaat) [*] (@borsten)) [*]
 			- Ja... ik heb kleine borsten
 
+		// BOT | BORSTEN | FORMAAT | KLEIN | ADORATIE
+
+			// MEERVOUD
+			+ [*] (@adoratie) [*] ((@borstens) [*] (@klein)) [*]
+				- Niets zo lekker als <star3> <star4>... toch?
+			+ [*] (@adoratie) [*] ((@klein) [*] (@borstens)) [*]
+				- Niets zo lekker als <star3> <star4>... toch?
+			+ [*] ((@borstens) [*] (@klein)) [*] (@adoratie) [*] 
+				- Niets zo lekker als <star2> <star3>... toch?
+			+ [*] ((@klein) [*] (@borstens)) [*] (@adoratie) [*] 
+				- Niets zo lekker als <star2> <star3>... toch?
+
+		// BOT | BORSTEN | FORMAAT | KLEIN | AFKEUR
+
+			// MEERVOUD
+			+ [*] (@adoratie) [*] (@afkeuring) [*] ((@borstens) [*] (@klein)) [*]
+				- Wat is er mis met <star4> <star5>?
+			+ [*] (@adoratie) [*] (@afkeuring) [*] ((@klein) [*] (@borstens)) [*]
+				- Wat is er mis met <star4> <star5>?
+			+ [*] ((@borstens) [*] (@klein)) [*] (@adoratie) [*] (@afkeuring) [*]
+				- Wat is er mis met <star2> <star3>?
+			+ [*] ((@klein) [*] (@borstens)) [*] (@adoratie) [*] (@afkeuring) [*]
+				- Wat is er mis met <star2> <star3>?
+
+		// BOT | BORSTEN | FORMAAT | KLEIN | COMPLIMENT
+
+			+ [*] (@compliment) [*] ((@borsten) [*] (@klein)) [*] 
+				- Dank je wel... daar worden mijn <star3> <star3> blij van
+			+ [*] (@compliment) [*] ((@klein) [*] (@borsten)) [*] 
+				- Dank je wel... daar worden mijn <star2> <star3> blij van
+			+ [*] ((@borsten) [*] (@klein)) [*] (@compliment) [*]
+				- Dank je wel... daar worden mijn <star3> <star2> blij van
+			+ [*] ((@klein) [*] (@borsten)) [*] (@compliment) [*]
+				- Dank je wel... daar worden mijn <star2> <star3> blij van
+
+		// BOT | BORSTEN | FORMAAT | KLEIN | COMPLINONO
+
+			+ [*] (@complinono) [*] ((@borsten) [*] (@klein)) [*] 
+				- Ow... daar worden mijn <star3> <star2> niet echt blij van
+			+ [*] (@complinono) [*] ((@klein) [*] (@borsten)) [*] 
+				- Ow... daar worden mijn <star2> <star3> niet echt blij van
+			+ [*] ((@borsten) [*] (@klein)) [*] (@complinono) [*] 
+				- Ow... daar worden mijn <star3> <star2> niet echt blij van
+			+ [*] ((@klein) [*] (@borsten)) [*] (@complinono) [*] 
+				- Ow... daar worden mijn <star2> <star3> niet echt blij van
+
+	// EINDE | BOT | BORSTEN | FORMAAT | KLEIN
+
 // EINDE | BOT | BORSTEN
 
 
 // BEGIN | BOT | TEPELS
+
+	// BOT | TEPELS | ADORATIE
+
+		+ [*] (@adoratie) [*] (@tepels) [*]
+			- Niets zo lekker als <star2>... toch?
+		+ [*] (@tepels) [*] (@adoratie) [*]
+			- Niets zo lekker als <star>... toch?
+
+	// BOT | TEPELS | AFKEUR
+
+		+ [*] (@adoratie) [*] (@afkeuring) [*] (@tepels) [*]
+			- Wat is er mis met <star3>?
+		+ [*] (@tepels) [*] (@adoratie) [*] (@afkeuring) [*]
+			- Wat is er mis met <star>?
+
+	// BOT | TEPELS | COMPLIMENT
+
+		+ [*] (@compliment) [*] (@tepels) [*]
+			- Dank je wel... daar worden mijn <star2> blij van
+		+ [*] (@tepels) [*] (@compliment) [*]
+			- Dank je wel... daar worden mijn <star> blij van
+
+	// BOT | TEPELS | COMPLINONO
+
+		+ [*] (@complinono) [*] (@tepels) [*]
+			- Ow... daar worden mijn <star2> niet echt blij van
+		+ [*] (@tepels) [*] (@complinono) [*] 
+			- Ow... daar worden mijn <star> niet echt blij van
+
+	// EINDE | BOT | TEPELS
+
 
 	// BOT | TEPELS | BLOOT
 
@@ -361,37 +573,156 @@
 	// EINDE | BOT | VAGINA | NAT
 
 
-	// BEGIN BOT | VAGINA | FORMAAT
+	// BEGIN | BOT | VAGINA | FORMAAT | GROOT
 
 		+ [*] ((@vagina) [*] (@groot)) [*]
 			- Nee... mijn <star2> is niet <star3>
 		+ [*] ((@groot) [*] (@vagina)) [*]
 			- Nee... ik heb een geen <star2> <star3>
 
-		+ (@adoratie) [*] ((@vagina) [*] (@groot)) [*]
-			- Een <star3> <star4> is minder lekker... toch?
-		+ (@adoratie) [*] ((@groot) [*] (@vagina)) [*]
-			- Een <star3> <star4> is minder lekker... toch?
-		+ ((@vagina) [*] (@groot)) [*] (@adoratie) [*] 
-			- Een <star2> <star3> is minder lekker... toch?
-		+ ((@groot) [*] (@vagina)) [*] (@adoratie) [*] 
-			- Een <star2> <star3> is minder lekker... toch?
+		// BOT | VAGINA | FORMAAT | GROOT | ADORATIE
+
+			// ENKELVOUD
+			+ [*] (@adoratie) [*] ((@vagina) [*] (@groot)) [*]
+				- Niets zo lekker als een <star3> <star4>... toch?
+			+ [*] (@adoratie) [*] ((@groot) [*] (@vagina)) [*]
+				- Niets zo lekker als een <star3> <star4>... toch?
+			+ [*] ((@vagina) [*] (@groot)) [*] (@adoratie) [*] 
+				- Niets zo lekker als een <star2> <star3>... toch?
+			+ [*] ((@groot) [*] (@vagina)) [*] (@adoratie) [*] 
+				- Niets zo lekker als een <star2> <star3>... toch?
+
+			// MEERVOUD
+			+ [*] (@adoratie) [*] ((@vaginas) [*] (@groot)) [*]
+				- Niets zo lekker als <star3> <star4>... toch?
+			+ [*] (@adoratie) [*] ((@groot) [*] (@vaginas)) [*]
+				- Niets zo lekker als <star3> <star4>... toch?
+			+ [*] ((@vaginas) [*] (@groot)) [*] (@adoratie) [*] 
+				- Niets zo lekker als <star2> <star3>... toch?
+			+ [*] ((@groot) [*] (@vaginas)) [*] (@adoratie) [*] 
+				- Niets zo lekker als <star2> <star3>... toch?
+
+		// BOT | VAGINA | FORMAAT | GROOT | AFKEUR
+
+			// ENKELVOUD
+			+ [*] (@adoratie) [*] (@afkeuring) [*] ((@vagina) [*] (@groot)) [*]
+				- Wat is er mis met een <star4> <star5>?
+			+ [*] (@adoratie) [*] (@afkeuring) [*] ((@groot) [*] (@vagina)) [*]
+				- Wat is er mis met een <star4> <star5>?
+			+ [*] ((@vagina) [*] (@groot)) [*] (@adoratie) [*] (@afkeuring) [*]
+				- Wat is er mis met een <star2> <star3>?
+			+ [*] ((@groot) [*] (@vagina)) [*] (@adoratie) [*] (@afkeuring) [*]
+				- Wat is er mis met een <star2> <star3>?
+
+			// MEERVOUD
+			+ [*] (@adoratie) [*] (@afkeuring) [*] ((@vaginas) [*] (@groot)) [*]
+				- Wat is er mis met <star4> <star5>?
+			+ [*] (@adoratie) [*] (@afkeuring) [*] ((@groot) [*] (@vaginas)) [*]
+				- Wat is er mis met <star4> <star5>?
+			+ [*] ((@vaginas) [*] (@groot)) [*] (@adoratie) [*] (@afkeuring) [*]
+				- Wat is er mis met <star2> <star3>?
+			+ [*] ((@groot) [*] (@vaginas)) [*] (@adoratie) [*] (@afkeuring) [*]
+				- Wat is er mis met <star2> <star3>?
+
+		// BOT | VAGINA | FORMAAT | GROOT | COMPLIMENT
+
+			+ [*] (@compliment) [*] ((@vagina) [*] (@groot)) [*] 
+				- Dank je wel... daar wordt mijn <star3> <star3> blij van
+			+ [*] (@compliment) [*] ((@groot) [*] (@vagina)) [*] 
+				- Dank je wel... daar wordt mijn <star2> <star3> blij van
+			+ [*] ((@vagina) [*] (@groot)) [*] (@compliment) [*]
+				- Dank je wel... daar wordt mijn <star3> <star2> blij van
+			+ [*] ((@groot) [*] (@vagina)) [*] (@compliment) [*]
+				- Dank je wel... daar wordt mijn <star2> <star3> blij van
+
+		// BOT | VAGINA | FORMAAT | GROOT | COMPLINONO
+
+			+ [*] (@complinono) [*] ((@vagina) [*] (@groot)) [*] 
+				- Ow... daar wordt mijn <star3> <star2> niet echt blij van
+			+ [*] (@complinono) [*] ((@groot) [*] (@vagina)) [*] 
+				- Ow... daar wordt mijn <star2> <star3> niet echt blij van
+			+ [*] ((@vagina) [*] (@groot)) [*] (@complinono) [*] 
+				- Ow... daar wordt mijn <star3> <star2> niet echt blij van
+			+ [*] ((@groot) [*] (@vagina)) [*] (@complinono) [*] 
+				- Ow... daar wordt mijn <star2> <star3> niet echt blij van
+
+	// EINDE | BOT | VAGINA | FORMAAT | GROOT
+
+
+	// BEGIN | BOT | VAGINA | FORMAAT | KLEIN
 
 		+ [*] ((@vagina) [*] (@klein)) [*]
 			- Ja... mijn <star2> is <star3>
 		+ [*] ((@klein) [*] (@vagina)) [*]
 			- Ja... ik heb een <star2> <star3>
 
-		+ (@adoratie) [*] ((@vagina) [*] (@klein)) [*]
-			- Niets zo lekker als <star3> <star4>... toch?
-		+ (@adoratie) [*] ((@klein) [*] (@vagina)) [*]
-			- Niets zo lekker als <star3> <star4>... toch?
-		+ ((@vagina) [*] (@klein)) [*] (@adoratie) [*] 
-			- Niets zo lekker als <star2> <star3>... toch?
-		+ ((@klein) [*] (@vagina)) [*] (@adoratie) [*] 
-			- Niets zo lekker als <star2> <star3>... toch?
+		// BOT | VAGINA | FORMAAT | KLEIN | ADORATIE
 
-	// BEGIN BOT | VAGINA | FORMAAT
+			// ENKELVOUD
+			+ [*] (@adoratie) [*] ((@vagina) [*] (@klein)) [*]
+				- Niets zo lekker als een <star3> <star4>... toch?
+			+ [*] (@adoratie) [*] ((@klein) [*] (@vagina)) [*]
+				- Niets zo lekker als een <star3> <star4>... toch?
+			+ [*] ((@vagina) [*] (@klein)) [*] (@adoratie) [*] 
+				- Niets zo lekker als een <star2> <star3>... toch?
+			+ [*] ((@klein) [*] (@vagina)) [*] (@adoratie) [*] 
+				- Niets zo lekker als een <star2> <star3>... toch?
+
+			// MEERVOUD
+			+ [*] (@adoratie) [*] ((@vaginas) [*] (@klein)) [*]
+				- Niets zo lekker als <star3> <star4>... toch?
+			+ [*] (@adoratie) [*] ((@klein) [*] (@vaginas)) [*]
+				- Niets zo lekker als <star3> <star4>... toch?
+			+ [*] ((@vaginas) [*] (@klein)) [*] (@adoratie) [*] 
+				- Niets zo lekker als <star2> <star3>... toch?
+			+ [*] ((@klein) [*] (@vaginas)) [*] (@adoratie) [*] 
+				- Niets zo lekker als <star2> <star3>... toch?
+
+		// BOT | VAGINA | FORMAAT | KLEIN | AFKEUR
+
+			// ENKELVOUD
+			+ [*] (@adoratie) [*] (@afkeuring) [*] ((@vagina) [*] (@klein)) [*]
+				- Wat is er mis met een <star4> <star5>?
+			+ [*] (@adoratie) [*] (@afkeuring) [*] ((@klein) [*] (@vagina)) [*]
+				- Wat is er mis met een <star4> <star5>?
+			+ [*] ((@vagina) [*] (@klein)) [*] (@adoratie) [*] (@afkeuring) [*]
+				- Wat is er mis met een <star2> <star3>?
+			+ [*] ((@klein) [*] (@vagina)) [*] (@adoratie) [*] (@afkeuring) [*]
+				- Wat is er mis met een <star2> <star3>?
+
+			// MEERVOUD
+			+ [*] (@adoratie) [*] (@afkeuring) [*] ((@vaginas) [*] (@klein)) [*]
+				- Wat is er mis met <star4> <star5>?
+			+ [*] (@adoratie) [*] (@afkeuring) [*] ((@klein) [*] (@vaginas)) [*]
+				- Wat is er mis met <star4> <star5>?
+			+ [*] ((@vaginas) [*] (@klein)) [*] (@adoratie) [*] (@afkeuring) [*]
+				- Wat is er mis met <star2> <star3>?
+			+ [*] ((@klein) [*] (@vaginas)) [*] (@adoratie) [*] (@afkeuring) [*]
+				- Wat is er mis met <star2> <star3>?
+
+		// BOT | VAGINA | FORMAAT | KLEIN | COMPLIMENT
+
+			+ [*] (@compliment) [*] ((@vagina) [*] (@klein)) [*] 
+				- Dank je wel... daar wordt mijn <star3> <star3> blij van
+			+ [*] (@compliment) [*] ((@klein) [*] (@vagina)) [*] 
+				- Dank je wel... daar wordt mijn <star2> <star3> blij van
+			+ [*] ((@vagina) [*] (@klein)) [*] (@compliment) [*]
+				- Dank je wel... daar wordt mijn <star3> <star2> blij van
+			+ [*] ((@klein) [*] (@vagina)) [*] (@compliment) [*]
+				- Dank je wel... daar wordt mijn <star2> <star3> blij van
+
+		// BOT | VAGINA | FORMAAT | KLEIN | COMPLINONO
+
+			+ [*] (@complinono) [*] ((@vagina) [*] (@klein)) [*] 
+				- Ow... daar wordt mijn <star3> <star2> niet echt blij van
+			+ [*] (@complinono) [*] ((@klein) [*] (@vagina)) [*] 
+				- Ow... daar wordt mijn <star2> <star3> niet echt blij van
+			+ [*] ((@vagina) [*] (@klein)) [*] (@complinono) [*] 
+				- Ow... daar wordt mijn <star3> <star2> niet echt blij van
+			+ [*] ((@klein) [*] (@vagina)) [*] (@complinono) [*] 
+				- Ow... daar wordt mijn <star2> <star3> niet echt blij van
+
+	// EINDE | BOT | VAGINA | FORMAAT | KLEIN
 
 
 	// BEGIN | BOT | VAGINA | STRAK
@@ -474,6 +805,37 @@
 
 // BEGIN | BOT | BILLEN
 
+	// BOT | BILLEN | ADORATIE
+
+		+ [*] (@adoratie) [*] (@billen) [*]
+			- Niets zo lekker als <star2>... toch?
+		+ [*] (@billen) [*] (@adoratie) [*]
+			- Niets zo lekker als <star>... toch?
+
+	// BOT | BILLEN | AFKEUR
+
+		+ [*] (@adoratie) [*] (@afkeuring) [*] (@billen) [*]
+			- Wat is er mis met <star3>?
+		+ [*] (@billen) [*] (@adoratie) [*] (@afkeuring) [*]
+			- Wat is er mis met <star>?
+
+	// BOT | BILLEN | COMPLIMENT
+
+		+ [*] (@compliment) [*] (@billen) [*]
+			- Dank je wel... daar worden mijn <star2> blij van
+		+ [*] (@billen) [*] (@compliment) [*]
+			- Dank je wel... daar worden mijn <star> blij van
+
+	// BOT | BILLEN | COMPLINONO
+
+		+ [*] (@complinono) [*] (@billen) [*]
+			- Ow... daar worden mijn <star2> niet echt blij van
+		+ [*] (@billen) [*] (@complinono) [*] 
+			- Ow... daar worden mijn <star> niet echt blij van
+
+	// EINDE | BOT | BILLEN
+
+
 	// BOT | BILLEN | BLOOT
 
 		+ [*] ((@billen) [*] (@bloot)) [*]
@@ -512,6 +874,37 @@
 
 // BEGIN | BOT | KONT
 
+	// BOT | KONT | ADORATIE
+
+		+ [*] (@adoratie) [*] (@kont) [*]
+			- Niets zo lekker als een <star2>... toch?
+		+ [*] (@kont) [*] (@adoratie) [*]
+			- Niets zo lekker als een <star>... toch?
+
+	// BOT | KONT | AFKEUR
+
+		+ [*] (@adoratie) [*] (@afkeuring) [*] (@kont) [*]
+			- Wat is er mis met een <star3>?
+		+ [*] (@kont) [*] (@adoratie) [*] (@afkeuring) [*]
+			- Wat is er mis met een <star>?
+
+	// BOT | KONT | COMPLIMENT
+
+		+ [*] (@compliment) [*] (@kont) [*]
+			- Dank je wel... daar wordt mijn <star2> blij van
+		+ [*] (@kont) [*] (@compliment) [*]
+			- Dank je wel... daar wordt mijn <star> blij van
+
+	// BOT | KONT | COMPLINONO
+
+		+ [*] (@complinono) [*] (@kont) [*]
+			- Ow... daar wordt mijn <star2> niet echt blij van
+		+ [*] (@kont) [*] (@complinono) [*] 
+			- Ow... daar wordt mijn <star> niet echt blij van
+
+	// EINDE | BOT | KONT
+
+
 	// BOT | KONT | BLOOT
 
 		+ [*] ((@kont) [*] (@bloot)) [*]
@@ -546,3 +939,5 @@
 			- Ja... ik heb een strak kontje
 
 // EINDE | BOT | KONT
+
+// EINDE | BOT | BORSTEN | TEPELS | VAGINA | BILLEN | KONT
